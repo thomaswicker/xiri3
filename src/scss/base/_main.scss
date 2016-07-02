@@ -1,0 +1,35 @@
+@import "../global/vars";
+@import "../global/mixins";
+
+/*
+  __  __    _    ___ _   _
+ |  \/  |  / \  |_ _| \ | |
+ | |\/| | / _ \  | ||  \| |
+ | |  | |/ ___ \ | || |\  |
+ |_|  |_/_/   \_\___|_| \_|
+*/
+
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-1;
+  background-color: $site-background;
+  letter-spacing: normal;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+a {
+  color: $color-primary;
+  font-family: $font-2;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

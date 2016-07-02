@@ -1,0 +1,26 @@
+{
+  "name": "xiri-3",
+  "description": "Portfolio Site for XIRI Media, LLC in Denver, CO",
+  "main": "gulpfile.js",
+  "authors": [
+    "Thomas Wicker - www.xiri.io"
+  ],
+  "license": "MIT",
+  "homepage": "www.xiri.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "foundation-sites": "^6.2.3"
+  },
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE>
+%html{"ng-app" => "xiriApp"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %title Potion CSS Framework
+      %meta{:content => "Flexible Mobile First CSS Framework", :name => "description"}
+      %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+      / To ensure proper rendering and style for mobile devices
+      %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
+      / Begin ## FAVICONS ## Replace the icon images with your own under img/
+      %link{:href => "img/favicon.ico", :rel => "shortcut icon"}
+      -# %link{:href => "img/apple-touch-icon.png", :rel => "apple-touch-icon"}
+      -# %link{:href => "img/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}
+      -# %link{:href => "img/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
+      -# %link{:href => "img/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
+      -# %link{:href => "img/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}
+
+      / Angular Spells
+
+      / Application Spells
+      %link{:href => "bower_components/foundation-sites/dist/foundation.min.css", :rel => "stylesheet"}
+      %link{:href => "css/application.min.css", :rel => "stylesheet"}
+
+
+  %body{"ng-controller" => "MainController", "ng-init" => "init()"}
+    %header{:role => "navigation"}
+      .superhero-brand.medium-2.columns
+        %a{:href => "#"}
+          %img{:alt => "XIRI Logo", :src => "img/xiri_logo.svg"}
+
+      .superhero-nav.medium-10.columns
+        %ul
+          %li
+            %a{:href => "#gettingstarted", "ng-class" => "{active: $route.current.activePage == 'gettingstarted'}"}
+              Getting Started
+          %li
+            %a{:href => "#components", "ng-class" => "{active: $route.current.activePage == 'components'}"}
+              Components
+
+          %li
+            %a#tw_logo.tw_logo{:href => "http://www.thomaswicker.com", :target => "blank"}
+              %img{:alt => "Link to thomaswicker.com", :src => "img/xiri_logo.svg"}
+
+      %superhero.medium-12.columns.short.bg-color.primary
+        .medium-12.columns
+          %h2
+            Unique User Interfaces
+          %h4
+            Thoughtfully crafted user interfaces can empower people and strengthen brands. Our UI solutions always focus on blending empathy, creativity, and rationality to solve real problems for both users and customers.
+
+
+        .medium-12.columns.shim.left.none
+          %a.btn.btn-secondary.margin.top.bottom.md{:href => "https://github.com/thomaswicker/potion-css", :target => "blank"}
+            %span Download
+
+    %ng-view
+
+    / Magical Spells
+    %script{:src => "bower_components/jquery/dist/jquery.min.js"}
+    %script{:src => "bower_components/foundation-sites/dist/foundation.min.js"}
+    %script{:src => "bower_components/angular/angular.min.js"}
+    %script{:src => "bower_components/angular-route/angular-route.min.js"}
+
+    //Live reload for development
+    %script{:src => "js/application.min.js"}
+    :javascript
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

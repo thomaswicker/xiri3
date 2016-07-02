@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html ng-app='xiriApp'>
+  <head>
+    <meta charset='UTF-8'>
+      <title>Potion CSS Framework</title>
+      <meta content='Flexible Mobile First CSS Framework' name='description'>
+      <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+      <!-- To ensure proper rendering and style for mobile devices -->
+      <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+      <!-- Begin ## FAVICONS ## Replace the icon images with your own under img/ -->
+      <link href='img/favicon.ico' rel='shortcut icon'>
+      <!-- Angular Spells -->
+      <!-- Application Spells -->
+      <link href='bower_components/foundation-sites/dist/foundation.min.css' rel='stylesheet'>
+      <link href='css/application.min.css' rel='stylesheet'>
+    </meta>
+  </head>
+  <body ng-controller='MainController' ng-init='init()'>
+    <header role='navigation'>
+      <div class='superhero-brand medium-2 columns'>
+        <a href='#'>
+          <img alt='XIRI Logo' src='img/xiri_logo.svg'>
+        </a>
+      </div>
+      <div class='superhero-nav medium-10 columns'>
+        <ul>
+          <li>
+            <a href='#gettingstarted' ng-class="{active: $route.current.activePage == 'gettingstarted'}">
+              Getting Started
+            </a>
+          </li>
+          <li>
+            <a href='#components' ng-class="{active: $route.current.activePage == 'components'}">
+              Components
+            </a>
+          </li>
+          <li>
+            <a class='tw_logo' href='http://www.thomaswicker.com' id='tw_logo' target='blank'>
+              <img alt='Link to thomaswicker.com' src='img/xiri_logo.svg'>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <superhero class='medium-12 columns short bg-color primary'>
+        <div class='medium-12 columns'>
+          <h2>
+            Unique User Interfaces
+          </h2>
+          <h4>
+            Thoughtfully crafted user interfaces can empower people and strengthen brands. Our UI solutions always focus on blending empathy, creativity, and rationality to solve real problems for both users and customers.
+          </h4>
+        </div>
+        <div class='medium-12 columns shim left none'>
+          <a class='btn btn-secondary margin top bottom md' href='https://github.com/thomaswicker/potion-css' target='blank'>
+            <span>Download</span>
+          </a>
+        </div>
+      </superhero>
+    </header>
+    <ng-view></ng-view>
+    <!-- Magical Spells -->
+    <script src='bower_components/jquery/dist/jquery.min.js'></script>
+    <script src='bower_components/foundation-sites/dist/foundation.min.js'></script>
+    <script src='bower_components/angular/angular.min.js'></script>
+    <script src='bower_components/angular-route/angular-route.min.js'></script>
+    <!-- /Live reload for development -->
+    <script src='js/application.min.js'></script>
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+  </body>
+</html>
