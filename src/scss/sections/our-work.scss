@@ -1,0 +1,75 @@
+/*
+  ___  _   _ ____   __        _____  ____  _  __
+ / _ \| | | |  _ \  \ \      / / _ \|  _ \| |/ /
+| | | | | | | |_) |  \ \ /\ / / | | | |_) | ' /
+| |_| | |_| |  _ <    \ V  V /| |_| |  _ <| . \
+ \___/ \___/|_| \_\    \_/\_/  \___/|_| \_\_|\_\
+
+*/
+
+.our-work-block {
+  position: relative;
+  padding: $unit-xxl $unit-xl $unit-jumbo $unit-xxl;
+
+  h2 {
+    color: $white;
+  }
+
+  p {
+    margin-bottom: $unit-xxl;
+    color: $white;
+  }
+
+
+  .our-work-tile {
+    float: left;
+    width: calc(25% - .5rem);
+    min-height: 550px;
+    margin:  0.25rem;
+    padding:  1rem;
+    border: 1px solid $xlight-gray;
+    background-color: $white;
+    display: inline-block;
+
+    h3 {
+      float: left;
+      width: 100%;
+      font-size: $font-size-lg;
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    .company {
+      float: left;
+      width: 100%;
+      color: $color-primary;
+    }
+
+    span.technology {
+      float: left;
+      width: 100%;
+      margin-top: $unit;
+      margin-bottom: $unit-xl;
+      color: $xlight-gray;
+      text-transform: uppercase;
+    }
+
+    .img-crop {
+      float: left;
+      width: 100%;
+      max-height: 300px;
+      background-color: pink;
+      overflow: hidden;
+
+      img {
+
+      }
+    }
+
+    .buttons {
+      float: left;
+      width: 100%;
+      margin-top: $unit-md;
+    }
+  }
+}

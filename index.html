@@ -12,50 +12,53 @@
       <!-- Angular Spells -->
       <!-- Application Spells -->
       <link href='bower_components/foundation-sites/dist/foundation.min.css' rel='stylesheet'>
+      <link href='bower_components/components-font-awesome/css/font-awesome.min.css' rel='stylesheet'>
       <link href='css/application.min.css' rel='stylesheet'>
     </meta>
   </head>
   <body ng-controller='MainController' ng-init='init()'>
-    <header role='navigation'>
-      <div class='superhero-brand medium-2 columns'>
-        <a href='#'>
-          <img alt='XIRI Logo' src='img/xiri_logo.svg'>
-        </a>
-      </div>
-      <div class='superhero-nav medium-10 columns'>
-        <ul>
-          <li>
-            <a href='#gettingstarted' ng-class="{active: $route.current.activePage == 'gettingstarted'}">
-              Getting Started
-            </a>
-          </li>
-          <li>
-            <a href='#components' ng-class="{active: $route.current.activePage == 'components'}">
-              Components
-            </a>
-          </li>
-          <li>
-            <a class='tw_logo' href='http://www.thomaswicker.com' id='tw_logo' target='blank'>
-              <img alt='Link to thomaswicker.com' src='img/xiri_logo.svg'>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <superhero class='medium-12 columns short bg-color primary'>
-        <div class='medium-12 columns'>
-          <h2>
-            Unique User Interfaces
-          </h2>
-          <h4>
-            Thoughtfully crafted user interfaces can empower people and strengthen brands. Our UI solutions always focus on blending empathy, creativity, and rationality to solve real problems for both users and customers.
-          </h4>
-        </div>
-        <div class='medium-12 columns shim left none'>
-          <a class='btn btn-secondary margin top bottom md' href='https://github.com/thomaswicker/potion-css' target='blank'>
-            <span>Download</span>
+    <header class='bg-color primary' role='navigation'>
+      <div class='row collapse'>
+        <div class='superhero-brand medium-2 columns'>
+          <a class='xiri_logo' href='http://www.xiri.io' id='xiri_logo'>
+            <img alt='XIRI Logo' src='img/xiri_logo.svg'>
           </a>
         </div>
-      </superhero>
+        <div class='superhero-nav medium-10 columns'>
+          <ul>
+            <li>
+              <a href='#gettingstarted' ng-class="{active: $route.current.activePage == 'gettingstarted'}">
+                Getting Started
+              </a>
+            </li>
+            <li>
+              <a href='#components' ng-class="{active: $route.current.activePage == 'components'}">
+                Components
+              </a>
+            </li>
+            <li>
+              <a class='tw_logo' href='http://www.thomaswicker.com' id='tw_logo' target='blank'>
+                <img alt='Link to thomaswicker.com' src='img/tw_logo.svg'>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='row collapse'>
+        <superhero class='medium-12 columns bg-color primary'>
+          <div class='superhero-img'>
+            <img class='guy-pointing' src='img/home_page_guy_pointing.svg'>
+          </div>
+          <div class='superhero-content'>
+            <h2>
+              Unique User Interfaces
+            </h2>
+            <h4>
+              Thoughtfully crafted user interfaces can empower people and strengthen brands. Our UI solutions always focus on blending empathy, creativity, and rationality to solve real problems for both users and customers.
+            </h4>
+          </div>
+        </superhero>
+      </div>
     </header>
     <ng-view></ng-view>
     <!-- Magical Spells -->

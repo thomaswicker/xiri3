@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 h1 {
-  @include font($font: $font-2, $style: normal, $size: $h1-size, $weight: normal);
+  @include font($font: $font-2, $style: normal, $size: $font-size-xl, $weight: $font-weight-bold);
 
   &.subheader {
     text-transform: uppercase;
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  @include font($font: $font-2, $style: normal, $size: $h2-size, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: $h2-size, $weight: $font-weight-bold);
 
   &.subheader {
     text-transform: uppercase;

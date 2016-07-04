@@ -12,6 +12,7 @@
    ========================================================================== */
 
 .superhero {
+  position: relative;
   min-height: 300px;
   padding: $unit-xxl 0 $unit-jumbo $unit-jumbo;
 
@@ -67,5 +68,37 @@
 
   &.tall {
     min-height: 500px;
+  }
+
+  .superhero-img {
+    float: left;
+    width: 400px;
+
+    img.guy-pointing {
+      position: absolute;
+      top: 25px;
+      left: 35px;
+      width: 100%;
+      max-width: 300px;
+      z-index: 100;
+    }
+  }
+
+  .superhero-content {
+    position: absolute;
+    right: 0;
+    float: left;
+    width: calc(100% - 400px);
+
+    h2 {
+      max-width: 1400px;
+    }
+
+    h4 {
+      max-width: 1400px;
+      font-size: $font-size-lg;
+      text-transform: initial;
+      line-height: 140%;;
+    }
   }
 }

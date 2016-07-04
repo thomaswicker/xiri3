@@ -1,0 +1,40 @@
+/*
+    _    ____   ___  _   _ _____   _   _ ____
+   / \  | __ ) / _ \| | | |_   _| | | | / ___|
+  / _ \ |  _ \| | | | | | | | |   | | | \___ \
+ / ___ \| |_) | |_| | |_| | | |   | |_| |___) |
+/_/   \_\____/ \___/ \___/  |_|    \___/|____/
+*/
+
+.about-block {
+  position: relative;
+  padding-top: $unit-xxl;
+
+  .about-block-left {
+    float: left;
+    width: 350px;
+
+    .btn {
+      position: relative;
+      top: 0;
+      float: none;
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 125px;
+    }
+  }
+
+  .about-block-right {
+    float: left;
+    width: calc(100% - 350px);
+    padding: $unit-xl $unit-xl $unit-xl $unit-xl;
+
+    p.body-text {
+      width: 100%;
+      max-width: 1000px;
+      font-size: $font-size-md;
+      line-height: 150%;
+    }
+  }
+}

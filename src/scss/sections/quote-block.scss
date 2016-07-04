@@ -1,0 +1,55 @@
+/*
+  ___  _   _  ___ _____ _____   ____  _     ___   ____ _  __
+ / _ \| | | |/ _ \_   _| ____| | __ )| |   / _ \ / ___| |/ /
+| | | | | | | | | || | |  _|   |  _ \| |  | | | | |   | ' /
+| |_| | |_| | |_| || | | |___  | |_) | |__| |_| | |___| . \
+ \__\_\\___/ \___/ |_| |_____| |____/|_____\___/ \____|_|\_\
+*/
+
+.quote-block {
+  position: relative;
+  margin-top: $unit-lg;
+  padding: $unit-xxl $unit-xl $unit-xl 100px;
+  border-top: 1px solid $xlight-gray;
+
+  h3.quote {
+    max-width: 2000px;
+    padding-left: $unit-jumbo;
+    padding-right: $unit-jumbo * 10;
+    font-family: $font-1;
+    font-size: $font-size-jumbo;
+    font-weight: 200;
+    line-height: 115%;
+    color: $color-primary;
+    border-left: 4px solid $color-primary;
+  }
+
+  figcaption {
+    float: left;
+    width: 100%;
+    margin-top: $unit-lg;
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+  }
+
+  img {
+    position: absolute;
+    top: 100px;
+    right: $unit-md;
+    max-width: 400px;
+  }
+
+  &.reverse {
+    padding: $unit-xl $unit-xl $unit-xl $unit-xl;
+    border-top: 0;
+    text-align: right;
+
+    h3.quote {
+      float: right;
+      max-width: 1000px;
+      padding-right: $unit-jumbo;
+      border-left: none;
+      border-right: 4px solid $color-primary;
+    }
+  }
+}

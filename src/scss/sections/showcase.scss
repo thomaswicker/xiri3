@@ -1,0 +1,35 @@
+/*
+ ____  _   _  _____        ______    _    ____  _____
+/ ___|| | | |/ _ \ \      / / ___|  / \  / ___|| ____|
+\___ \| |_| | | | \ \ /\ / / |     / _ \ \___ \|  _|
+ ___) |  _  | |_| |\ V  V /| |___ / ___ \ ___) | |___
+|____/|_| |_|\___/  \_/\_/  \____/_/   \_\____/|_____|
+
+*/
+
+.showcase-block {
+  position: relative;
+  padding: $unit-xxl $unit-xxl $unit-jumbo $unit-xxl;
+  background-color: $color-primary;
+
+  h2 {
+    padding-left: $unit-xl;
+    color: $white;
+  }
+
+  p {
+    margin-bottom: $unit-xl;
+    padding-left: $unit-xl;
+    font-size: $font-size-md;
+    color: $white;
+  }
+
+  .showcase-tile {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: $unit-sm $unit-sm $unit-sm $unit-sm;
+    border: 1px solid $white;
+    text-align: center;
+  }
+}

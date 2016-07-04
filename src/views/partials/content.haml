@@ -1,6 +1,790 @@
 %section{"ng-controller" => "ContentController", "ng-init" => "init()"}
-  %section.medium-12.columns
-    %h1
-      About XIRI [zeer-ee]
-    %p.body-text
-      XIRI is an independent UI/UX and development company based in Denver, CO. Our approach bridges the disciplines of design and technology to craft interactive experiences that people love to use. With over 15 years of experience in UI and web, we’ve worked with just about every size and type of client from all industries. At XIRI, we build brands, develop sites and drink a lot of coffee in the process.
+
+  // ######################### ABOUT US #########################
+  %section.about-block.bg-color.white.medium-12.columns
+    .about-block-left
+      %a.btn.btn-primary{ :href => "" }
+        Contact Us
+    .about-block-right
+      %h2
+        About XIRI [zeer-ee]
+      %p.body-text
+        XIRI is an independent UI/UX and development company based in Denver, CO. Our approach bridges the disciplines of design and technology to craft interactive experiences that people love to use. With over 15 years of experience in UI and web, we’ve worked with just about every size and type of client from all industries. At XIRI, we build brands, develop sites and drink a lot of coffee in the process.
+
+
+  // ######################### QUOTE 1 #########################
+
+  %section.quote-block.bg-color.white.medium-12.columns
+    %h3.quote
+      DESIGN IS NOT JUST WHAT IT LOOKS LIKE AND FEELS LIKE... DESIGN IS HOW IT WORKS.
+    %figcaption
+      \~ Steve Jobs
+    %img{ :src => "img/full-service-car.svg" }
+
+
+  // ######################### OUR SERVICES #########################
+
+  %section.medium-12.columns.bg-color.white.our-services-block
+    %h2 Our Services
+    %p What does XIRI offer in the way of services?
+
+    %section.bg-color.white.medium-12
+      .services-tile.left-side
+        .tile-left
+          %img{ :src => "img/services-icon-webdev.svg" }
+        .tile-right
+          %h4 Website Development
+          %p
+            We are focused on crafting pixel-perfect and standards compliant solutiuons. We are passionate about clean and elegant code and continually strive to explore new technologies and techniques in modern web development.
+
+      .services-tile.right-side
+        .tile-left
+          %img{ :src => "img/services-icon-mobilefirst.svg" }
+        .tile-right
+          %h4 Mobile First Design
+          %p
+            Now more than ever, most of us access our day-to-day content through a mobile device. We specialize in creating bold responsive layouts that help our clients take full advantage of the rapidly changing mobile devices market.
+
+      .services-tile.left-side
+        .tile-left
+          %img{ :src => "img/services-icon-ui.svg" }
+        .tile-right
+          %h4 User Interface
+          %p
+            We focus on creating intuitive and aesthetically pleasing User Interface designs that give our clients and customers simple and enjoyable ways to interact with a product or service. Every solution is and should be unique.
+
+      .services-tile.right-side
+        .tile-left
+          %img{ :src => "img/services-icon-ux.svg" }
+        .tile-right
+          %h4 User Experience
+          %p
+            We never forget that we are designing for people. We strive to help all of our clients understand their customers and key target demographics in order to make better decisions that promote success and growth for their online presence.
+
+      .services-tile.left-side
+        .tile-left
+          %img{ :src => "img/services-icon-performance.svg" }
+        .tile-right
+          %h4 Focus on Performance
+          %p
+            On average you only have a few precious seconds to engage and retain a visitor to your site. We focus on lean code that promotes performance and quick load times. Desktop or mobile, your users shouldn't be staring at that spinner.
+
+      .services-tile.right-side
+        .tile-left
+          %img{ :src => "img/services-icon-accessibility.svg" }
+        .tile-right
+          %h4 Accessibility
+          %p
+            Did you know that there are a wide range of users who simply can't use most sites due to accessbiility concerns? We bake accessibility and usability into every site, making your users happier and widening your customer base.
+
+  .divider-1
+    .box-1
+    .box-2
+    .box-3
+    .box-4
+
+  // ######################### OUR WORK #########################
+
+  %section.medium-12.columns.bg-color.black.our-work-block
+    %h2 Our Work
+    %p
+      Check out the latest projects we’ve been working on.
+
+    %section.medium-12
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          WEALTH MANAGEMENT APP
+
+        .company.medium-12.columns
+          OPPENHEIMER FUNDS - CENTENNIAL, CO
+
+        %span.technology.medium-12.columns
+          RAILS, HAML, CSS3, SASS, JQUERY, JAVASCRIPT, ANGULARJS, MONGODB
+
+        .img-crop
+          %img{ :src => "img/portfolio/opp-wealth-management-theme-landing.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/29097111/Oppenheimer-Wealth-Management-Responsive-App", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://www.oppenheimerfunds.com/private-client-groups", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB DESIGN
+
+        .company.medium-12.columns
+          XIRI MEDIA - DENVER, CO
+
+        %span.technology.medium-12.columns
+          RAILS, HAML, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/xiri-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18346811/Responsive-Website-Design-for-XIRI-Media-LLC", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://www.xiri.io", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          ELEARNING APP UI/UX DESIGN
+
+        .company.medium-12.columns
+          CDOT - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HAML, SASS, ADOBE ILLUSTRATOR
+
+        .img-crop
+          %img{ :src => "img/portfolio/cdot-budget-management.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/28101621/eLearning-App-UIUX", :target => "_blank"}
+            View Behance
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          ADVISOR RESPONSIVE WEB APP
+
+        .company.medium-12.columns
+          OPPENHEIMER FUNDS (ADVISOR) - CENTENNIAL, CO
+
+        %span.technology.medium-12.columns
+          RAILS, HAML, CSS3, SASS, JQUERY, JAVASCRIPT, ANGULARJS, MONGODB
+
+        .img-crop
+          %img{ :src => "img/portfolio/oppenheimer-advisor-website-mobile.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/28347797/Oppenheimer-Funds-ADVISOR-Mobile-App", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://www.oppenheimerfunds.com/advisors", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB APP - ELECTION 2016
+
+        .company.medium-12.columns
+          OFI GLOBAL - DENVER, CO
+
+        %span.technology.medium-12.columns
+          RAILS, HAML, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/opp-election-2016.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/37986747/Oppenheimer-Election-2016-Mini-Web-App", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://www.oppenheimerfunds.com/advisors/election-2016", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB APP
+
+        .company.medium-12.columns
+          VINELIST - DENVER, CO
+
+        %span.technology.medium-12.columns
+          RAILS, HAML, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/vinelist-website-mobile.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/37986379/Vinelist-Responsive-App?", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://www.vinelist.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB APP
+
+        .company.medium-12.columns
+          OPPENHEIMER FUNDS - CENTENNIAL, CO
+
+        %span.technology.medium-12.columns
+          RAILS, HAML, CSS3, SASS, JQUERY, JAVASCRIPT, ANGULARJS. MONGODB
+
+        .img-crop
+          %img{ :src => "img/portfolio/oppenheimer-investor.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/20924257/Oppenheimer-Funds-Responsive-Web-App", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://www.oppenheimerfunds.com/investors", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEBSITE
+
+        .company.medium-12.columns
+          REALTIME MUSIC - NEW YORK, NY
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT, BOOTSTRAP
+
+        .img-crop
+          %img{ :src => "img/portfolio/rms-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18270733/Responsive-UIUX-Design-for-RealTime-Music-Solutions", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://www.rms.biz", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE TASK APP
+
+        .company.medium-12.columns
+          DAVITA - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/davita-flight-deck.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18351745/Responsive-Task-Manager-and-Intranet-Design", :target => "_blank"}
+            View Behance
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB & MOBILE
+
+        .company.medium-12.columns
+          WESTERN ECOSYSTEMS - CHEYENNE, WY
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT, WORDPRESS
+
+        .img-crop
+          %img{ :src => "img/portfolio/west-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18346459/UIUX-and-Front-End-Dev-for-WEST-Inc-in-Cheyenne-WY", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://www.west-inc.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          iOS & Android TABLET APP
+
+        .company.medium-12.columns
+          CRICKET WIRELESS - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/cricket-ui-CID.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18269631/UIUX-for-iPad-app-for-Cricket-Communications", :target => "_blank"}
+            View Behance
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          CLINIC APP
+
+        .company.medium-12.columns
+          DAVITA - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/davita-clinic-app.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18351653/UIUX-Front-End-Dev-for-DaVita", :target => "_blank"}
+            View Behance
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEBSITE
+
+        .company.medium-12.columns
+          THE PARAGON KITCHEN - AMARILLO, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT, WORDPRESS, PHP
+
+        .img-crop
+          %img{ :src => "img/portfolio/paragon-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/28107779/Website-DesignDevelopment?", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://paragonkitchen.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          APP UI/UX
+
+        .company.medium-12.columns
+          CRICKET WIRELESS - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/cricket-tablet-app.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18269519/UIUX-for-Cricket-Communications-MyAccount-Manager-App", :target => "_blank"}
+            View Behance
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          ANDROID APP DESIGN
+
+        .company.medium-12.columns
+          CRICKET WIRELESS - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/cricket-android-app.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18269737/Android-App-Design-for-Cricket-Communications", :target => "_blank"}
+            View Behance
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB & MOBILE APP
+
+        .company.medium-12.columns
+          STREAM ENERGY - ALPHARETTA, GA
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY MOBILE
+
+        .img-crop
+          %img{ :src => "img/portfolio/stream-energy-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18346319/Mobile-App-for-Stream-Energy", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://mystream.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE SITE DESIGN & MOBILE
+
+        .company.medium-12.columns
+          GILBERT LEDESMA - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HHTML5, CSS3, SASS, JQUERY, JAVASCRIPT, BOOTSTRAP
+
+        .img-crop
+          %img{ :src => "img/portfolio/tattoo-gil-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18347697/Responsive-Website-Design-for-Tattoo-Artist-Gil-Ledesma", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://tattoogil.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE SVG - JMAP
+
+        .company.medium-12.columns
+          OPEN SOURCE
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, SVG
+
+        .img-crop
+          %img{ :src => "img/portfolio/jmap.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/20925055/Responsive-SVG-Map", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://github.com/thomaswicker/jMap", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          RESPONSIVE WEB DESIGN
+
+        .company.medium-12.columns
+          LUMBLEAU REAL ESTATE - LOS ANGELES, CA
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT, BOOTSTRAP
+
+        .img-crop
+          %img{ :src => "img/portfolio/lumbleau-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18347915/Responsive-Website-Development-for-Lumbleau-Real-Estate", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://www.lumbleau.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          APP DESIGN
+
+        .company.medium-12.columns
+          CRICKET WIRELESS - DENVER, CO
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/cricket-main-site.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/18347447/Software-Application-Design-for-Cricket-Wireless", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "https://www.cricketwireless.com", :target => "_blank"}
+            View Site
+
+      // Showcase Tile
+      .our-work-tile
+        %h3.medium-12.columns
+          PERSONAL CSS FRAMEWORK - POTION
+
+        .company.medium-12.columns
+          OPEN SOURCE
+
+        %span.technology.medium-12.columns
+          HTML5, CSS3, SASS, JQUERY, JAVASCRIPT
+
+        .img-crop
+          %img{ :src => "img/portfolio/potion-website.jpg" }
+
+        .buttons
+          %a.btn.btn-primary{ :href => "https://www.behance.net/gallery/20925447/Custom-SASSCSS-Framework-PotionCSS", :target => "_blank"}
+            View Behance
+          %a.btn.btn-secondary{ :href => "http://www.getpotion.com", :target => "_blank"}
+            View Site
+
+  .divider-2
+    .box-1
+    .box-2
+    .box-3
+    .box-4
+
+  // ######################### OUR TOOLS #########################
+
+  %section.medium-12.columns.our-tools-block
+    %h2 Tools & Process
+
+    %p
+      A peek at the technologies and tools that we love to use.
+
+    %ul.row.collapse
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          HTML5
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Node.js
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Basecamp
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Github
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Wordpress
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Potion Framework
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Stack Overflow
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          PHP
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Javascript
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Adobe Creative Suite
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Atom Text Editor
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          AngularJS
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          SASS/LESS
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          VIM
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Foundation
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Bootstrap
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Ruby on Rails
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Codepen.io
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Heroku
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          JIRA
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          jQuery
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          Command Line
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          ReactJS
+
+      // Our Tools Tile
+      %li.medium-4.large-3.columns.our-tools-tile
+        %span.fa.fa-chevron-right
+        %p
+          HAML
+
+  // ######################### OUR PROCESS #########################
+
+  %section.medium-12.columns.our-process-block
+    .medium-3.columns.our-process-tile
+      .our-process-step
+        1
+      %h4
+        Analysis
+      %p
+        The most important step in successful project completion is preparation. By communication with our clients extensively (phone, email, chat) and by asking the right questions we obtain all of the information that will be required for our team to accomplish the goals.
+
+    .medium-3.columns.our-process-tile
+      .our-process-step
+        2
+      %h4
+        Design
+      %p
+        We produce a design mock up based on the information that we obtain. We test several approaches and refine the prototype through several editing stages based on your feedback. Once the prototype is approved we design the rest of the pages and go through the same process.
+
+    .medium-3.columns.our-process-tile
+      .our-process-step
+        3
+      %h4
+        Development
+      %p
+        We convert static page designs into web ready HTML5 and CSS format. Afterwards we integrate the markup into a CMS and build required functionality. We go through another round of revisions prior to moving to the final stage. Throughout this stage of process our work can be observer on the development server.
+
+    .medium-3.columns.our-process-tile
+      .our-process-step
+        4
+      %h4
+        Deploy
+      %p
+        We test completed website until we make sure there are no unexpected errors and everything is working accordingly. Once it is tested we transfer the website to client’s hosting and set it up. We provide free 60 days of support, that includes error fixes and edits, after the transfer.
+
+  .divider-3
+    .box-1
+    .box-2
+    .box-3
+    .box-4
+
+
+  // ######################### QUOTE 2 #########################
+
+  %section.quote-block.reverse.bg-color.white.medium-12.columns
+    %h3.quote
+      VISION IS THE ART OF SEEING WHAT IS INVISIBLE TO OTHERS.
+    %figcaption
+      \~ Jonathan Swift
+
+
+  // ######################### WHO WE'VE WORKED WITH #########################
+
+  %section.medium-12.columns.showcase-block
+    %h2 Who We've Worked With
+    %p
+      Is name-dropping allowed?
+
+    %section.medium-12.columns
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_oppenheimer.png",:alt => "Oppenheimer Funds" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_cricket.png",:alt => "Cricket Wireless" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_spaceFoundation.png",:alt => "Space Foundation" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_mcdonalds.png",:alt => "McDonalds" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_davita.png",:alt => "Davita" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_deloitte.png",:alt => "Deloitte" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_westernUnion.png",:alt => "Western Union" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_ATT.png",:alt => "AT&T Wireless" }
+
+      // Who We've Worked With Showcase Tile
+      .showcase-tile
+        %img{ :src => "img/client_logos/clients_logo_regis.png",:alt => "Regis University" }
+
+  .divider-4
+    .box-1
+    .box-2
+    .box-3
+    .box-4
+
+
+  // ######################### CONTACT US #########################
+
+  %section.medium-12.columns.contact-us-block
+    .medium-12.columns
+      %h2 Contact Us
+      %p
+        Drop us a line with the form below!
+
+    .medium-7.columns.contact-us-left
+      .form-content
+        %label Name
+        %input{ :type => "text" }
+
+        %label Email
+        %input{ :type => "text" }
+
+        %label Phone
+        %input{ :type => "tel" }
+
+        %label Message
+        %textarea{ :type => "text" }
+
+      .form-controls
+        %a.btn.btn-primary{ :href => "" } Send
+        %a.btn.btn-secondary{ :href => "" } Clear
+
+    .medium-5.columns.contact-us-right
+      %img{ :src => "img/woman_on_phone.svg",:alt => "Woman on the phone" }

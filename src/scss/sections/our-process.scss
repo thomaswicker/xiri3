@@ -1,0 +1,73 @@
+/*
+  ___  _   _ ____    ____  ____   ___   ____ _____ ____ ____
+ / _ \| | | |  _ \  |  _ \|  _ \ / _ \ / ___| ____/ ___/ ___|
+| | | | | | | |_) | | |_) | |_) | | | | |   |  _| \___ \___ \
+| |_| | |_| |  _ <  |  __/|  _ <| |_| | |___| |___ ___) |__) |
+ \___/ \___/|_| \_\ |_|   |_| \_\\___/ \____|_____|____/____/
+
+*/
+
+.our-tools-block {
+  position: relative;
+  float: left;
+  padding: $unit-xxl $unit-xxl $unit-jumbo $unit-xxl;
+  background-color: $white;
+
+  ul {
+    float: left;
+    margin-top: $unit-lg;
+  }
+
+  .our-tools-tile {
+    margin-bottom: $unit-sm;
+
+    span {
+      float: left;
+      width: $unit-md;
+    }
+
+    p {
+      float: left;
+      width: calc(100% - $unit-md);
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+.our-process-block {
+  position: relative;
+  padding: $unit-xxl $unit-xxl $unit-jumbo $unit-xxl;
+  background-color: $xxlight-gray;
+
+  .our-process-tile {
+    text-align: center;
+
+    .our-process-step {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $unit-lg;
+      width: 70px;
+      padding: $unit;
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bold;
+      text-align: center;
+      background-color: $white;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      border-radius: 50%;
+    }
+
+    h4 {
+      padding-bottom: $unit;
+      font-weight: $font-weight-bold;
+      text-align: center;
+      border-bottom: 1px solid $black;
+    }
+
+    p {
+      font-size: $font-size-md;
+      text-align: left;
+      line-height: 140%;
+    }
+  }
+}

@@ -6,7 +6,6 @@
  /_/   \_\_|   |_|   |_____|___\____/_/   \_\_| |___\___/|_| \_|  \___/|____/
 */
 
-
 //Setting up the core Angular App - potion
 var xiri = angular.module('xiriApp', ['ngRoute']);
 

@@ -46,7 +46,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('images', function() {
-	return gulp.src('src/img/**/*.svg')
+	return gulp.src('src/img/**/*')
 		.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
 		.pipe(gulp.dest('img'))
 		.pipe(notify({ message: 'IMAGES task complete' }))

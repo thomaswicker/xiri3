@@ -1,0 +1,69 @@
+/*
+  ___  _   _ ____    ____  _____ ______     _____ ____ _____ ____
+ / _ \| | | |  _ \  / ___|| ____|  _ \ \   / /_ _/ ___| ____/ ___|
+| | | | | | | |_) | \___ \|  _| | |_) \ \ / / | | |   |  _| \___ \
+| |_| | |_| |  _ <   ___) | |___|  _ < \ V /  | | |___| |___ ___) |
+ \___/ \___/|_| \_\ |____/|_____|_| \_\ \_/  |___\____|_____|____/
+
+*/
+
+.our-services-block {
+  position: relative;
+  float: left;
+  margin-top: 80px;
+  padding: $unit-xxl $unit-xl $unit-jumbo $unit-xxl;
+  border-top: 1px solid $xlight-gray;
+
+  h2 {
+
+  }
+
+  p {
+    margin-bottom: $unit-md;
+    font-size: $font-size-md;
+  }
+
+  .services-tile {
+    float: left;
+    width: calc(50% - 20px);
+    background-color: $white;
+    border: 1px solid $xlight-gray;
+    margin: 10px;
+    margin-top: $unit-md;
+    padding: $base-unit $base-unit $unit-xs $unit-lg;
+    display: inline-block;
+
+    &.left-side {
+      margin-left: 0;
+    }
+
+    &.right-side {
+      margin-right: 0;
+    }
+
+    .tile-left {
+      float: left;
+      width: 80px;
+
+      img {
+        max-width: 75px;
+      }
+    }
+
+    .tile-right {
+      float: left;
+      width: calc(100% - 80px);
+      padding: $base-unit $base-unit $base-unit $unit-lg;
+
+      h4 {
+        font-size: $font-size-md;
+        font-weight: $font-weight-bold;
+      }
+
+      p {
+        font-size: $font-size-md;
+        line-height: 145%;
+      }
+    }
+  }
+}

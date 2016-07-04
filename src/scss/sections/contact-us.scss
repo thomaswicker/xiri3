@@ -1,0 +1,55 @@
+/*
+  ____ ___  _   _ _____  _    ____ _____   _   _ ____
+ / ___/ _ \| \ | |_   _|/ \  / ___|_   _| | | | / ___|
+| |  | | | |  \| | | | / _ \| |     | |   | | | \___ \
+| |__| |_| | |\  | | |/ ___ \ |___  | |   | |_| |___) |
+ \____\___/|_| \_| |_/_/   \_\____| |_|    \___/|____/
+
+*/
+
+.contact-us-block {
+  position: relative;
+  padding: $unit-jumbo 0 $unit-jumbo $unit-jumbo;
+
+  h2 {
+
+  }
+
+  p {
+    margin-bottom: $unit-xxl;
+    font-size: $font-size-md;
+  }
+
+  .contact-us-left {
+    .form-content {
+
+    }
+
+    .form-controls {
+      .btn {
+        margin-top: $unit;
+        margin-right: $unit;
+      }
+    }
+
+    input {
+      width: 100%;
+      max-width: 700px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 700px;
+    }
+  }
+
+  .contact-us-right {
+    img {
+      position: absolute;
+      top: $unit-jumbo;
+      right: $unit-md;
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+}
