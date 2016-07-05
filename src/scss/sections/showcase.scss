@@ -12,9 +12,25 @@
   padding: $unit-xxl $unit-xxl $unit-jumbo $unit-xxl;
   background-color: $color-primary;
 
+  @include mq(md) {
+    padding: $unit-xxl $unit-lg $unit-jumbo $unit-lg;
+  }
+
+  @include mq(sm) {
+    padding: $unit-xxl $unit-lg $unit-jumbo $unit-lg;
+  }
+
   h2 {
     padding-left: $unit-xl;
     color: $white;
+
+    @include mq(md) {
+      padding-left: 0;
+    }
+
+    @include mq(sm) {
+      padding-left: 0;
+    }
   }
 
   p {
@@ -22,6 +38,14 @@
     padding-left: $unit-xl;
     font-size: $font-size-md;
     color: $white;
+
+    @include mq(md) {
+      padding-left: 0;
+    }
+
+    @include mq(sm) {
+      padding-left: 0;
+    }
   }
 
   .showcase-tile {
@@ -31,5 +55,15 @@
     padding: $unit-sm $unit-sm $unit-sm $unit-sm;
     border: 1px solid $white;
     text-align: center;
+
+    @include mq(md) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 }

@@ -39,22 +39,40 @@
   padding: $unit-xxl $unit-xxl $unit-jumbo $unit-xxl;
   background-color: $xxlight-gray;
 
+  @include mq(md) {
+
+  }
+
+  @include mq(sm) {
+    padding: $unit $unit-lg $unit-jumbo $unit-lg;
+  }
+
   .our-process-tile {
     text-align: center;
 
     .our-process-step {
+      width: 100%;
+      max-width: 60px;
+      margin-top: $unit-lg;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: $unit-lg;
-      width: 70px;
-      padding: $unit;
+      padding: $unit-xs $unit $unit-xs $unit;
       font-size: $font-size-xl;
       font-weight: $font-weight-bold;
       text-align: center;
-      background-color: $white;
-      color: $color-primary;
-      border: 2px solid $color-primary;
-      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid $black;
+      color: $black;
+
+      @include mq(sm) {
+        margin-top: $unit-xxl;
+        padding: $unit-xs;
+        background-color: $black;
+        border: 0;
+        font-size: $font-size-lg;
+        color: $white;
+      }
     }
 
     h4 {

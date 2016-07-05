@@ -11,6 +11,10 @@
   position: relative;
   padding: $unit-jumbo 0 $unit-jumbo $unit-jumbo;
 
+  @include mq (sm) {
+    padding: $unit-jumbo $unit $unit-jumbo $unit;
+  }
+
   h2 {
 
   }
@@ -21,8 +25,8 @@
   }
 
   .contact-us-left {
-    .form-content {
-
+    .notranslate span {
+      margin-left: 0 !important;
     }
 
     .form-controls {
@@ -32,14 +36,56 @@
       }
     }
 
+    label {
+      float: left;
+      width: 100%;
+      margin-bottom: $unit-xs;
+      font-weight: $font-weight-bold;
+
+      span {
+        margin-left: 0 !important;
+      }
+    }
+
     input {
+      float: left;
       width: 100%;
       max-width: 700px;
+
+      @include mq (sm) {
+        max-width: 400px;
+      }
+    }
+
+    .buttons {
+      input {
+        max-width: 100px;
+        margin-top: $unit;
+      }
+    }
+
+    .notranslate {
+      float: left;
+      width: 100%;
+
+      span {
+        float: left;
+        margin-left: $unit-xs;
+        margin-right: $unit-xs;
+      }
     }
 
     textarea {
       width: 100%;
       max-width: 700px;
+
+      @include mq (md) {
+        max-width: 600px;
+      }
+
+      @include mq (sm) {
+        max-width: 400px;
+      }
     }
   }
 
@@ -50,6 +96,18 @@
       right: $unit-md;
       width: 100%;
       max-width: 450px;
+
+      @include mq (md) {
+        top: -40px;
+        right: -75px;
+        max-width: 300px;
+      }
+
+      @include mq (sm) {
+        top: -40px;
+        right: -75px;
+        max-width: 200px;
+      }
     }
   }
 }

@@ -12,16 +12,47 @@
   padding: $unit-xxl $unit-xl $unit-xl 100px;
   border-top: 1px solid $xlight-gray;
 
+  @include mq(lg) {
+    padding: $unit-xxl $unit-xl $unit-xl 100px;
+  }
+
+  @include mq(md) {
+    padding: $unit-xxl $unit-xl $unit-xl $unit-jumbo;
+  }
+
+  @include mq(sm) {
+    padding: $unit-xxl $unit-xl 0 $unit-xl;
+  }
+
   h3.quote {
     max-width: 2000px;
     padding-left: $unit-jumbo;
-    padding-right: $unit-jumbo * 10;
+    padding-right: $unit-jumbo * 12;
     font-family: $font-1;
     font-size: $font-size-jumbo;
-    font-weight: 200;
+    font-weight: $font-weight-xlight;
     line-height: 115%;
     color: $color-primary;
     border-left: 4px solid $color-primary;
+
+    @include mq(lg) {
+      max-width: none;
+      padding-right: 0;
+      font-size: $font-size-xxl;
+    }
+
+    @include mq(md) {
+      max-width: none;
+      padding-right: 0;
+      font-size: $font-size-xxl;
+    }
+
+    @include mq(sm) {
+      max-width: none;
+      padding-right: 0;
+      font-size: $font-size-xl;
+      font-weight: $font-weight-light
+    }
   }
 
   figcaption {
@@ -34,9 +65,29 @@
 
   img {
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: $unit-md;
-    max-width: 400px;
+    max-width: 600px;
+    z-index: 1001;
+
+    @include mq(xl) {
+      max-width: 500px;
+    }
+
+    @include mq(lg) {
+      position: static;
+      margin-top: $unit-lg;
+    }
+
+    @include mq(md) {
+      position: static;
+      margin-top: $unit-lg;
+    }
+
+    @include mq(sm) {
+      position: static;
+      margin-top: $unit-lg;
+    }
   }
 
   &.reverse {

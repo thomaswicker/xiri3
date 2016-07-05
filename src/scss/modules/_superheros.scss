@@ -11,10 +11,81 @@
    %% Styling for Potion Superheros %%
    ========================================================================== */
 
+#nav-modal {
+  transition: all .5s elastic;
+
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(191, 30, 35, .95);
+    z-index: 100001;
+
+    .superhero-nav {
+      padding-top: $unit-xxl;
+      background-color: transparent;
+      display: block !important;
+
+       ul {
+         float: left;
+         width: 100%;
+
+        li {
+          float: left;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+#nav-toggle {
+  padding: $unit $unit-lg $unit-lg $unit-lg;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: $white;
+  text-align: center;
+  display: none;
+  z-index: 100002;
+
+  @include mq(sm) {
+    display: block;
+  }
+
+  &:hover {
+    i {
+      color: black;
+    }
+  }
+
+  i {
+    font-size: $font-size-lg;
+  }
+}
+
 .superhero {
   position: relative;
   min-height: 300px;
-  padding: $unit-xxl 0 $unit-jumbo $unit-jumbo;
+  padding: $unit 0 $unit-jumbo $unit-jumbo;
+
+  @include mq(lg) {
+    min-height: 270px;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+
+  @include mq(md) {
+    min-height: 250px;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+
+  @include mq(sm) {
+    min-height: 250px;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
 
   h2 {
       color: $white;
@@ -54,10 +125,6 @@
     color: darken($color-primary, 22%);
   }
 
-  @include mq(sm) {
-    padding: 2em 2em 1.5em 2em;
-  }
-
   &.short {
     min-height: 200px;
   }
@@ -74,13 +141,31 @@
     float: left;
     width: 400px;
 
+    @include mq(md) {
+
+    }
+
+    @include mq(sm) {
+      display: none;
+    }
+
     img.guy-pointing {
       position: absolute;
       top: 25px;
       left: 35px;
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       z-index: 100;
+
+      @include mq(lg) {
+        max-width: 350px;
+      }
+
+      @include mq(md) {
+        top: 20px;
+        left: -60px;
+        max-width: 220px;
+      }
     }
   }
 
@@ -90,15 +175,127 @@
     float: left;
     width: calc(100% - 400px);
 
+    @include mq(md) {
+      float: right;
+      width: 80%;
+      padding: $unit-xs $unit-xl $unit-xl $unit-xl;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding: $unit-xs $unit-xl $unit-xl $unit-xl;
+    }
+
     h2 {
       max-width: 1400px;
+      font-size: $font-size-jumbo * .9;
+      font-weight: $font-weight-light;
+
+      @include mq(lg) {
+        width: 100%;
+        font-size: $font-size-xxl * .9;
+        line-height: 115%;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        font-size: $font-size-xl;
+        line-height: 115%;
+      }
+
+      @include mq(sm) {
+        font-size: $font-size-xl;
+      }
     }
 
     h4 {
-      max-width: 1400px;
-      font-size: $font-size-lg;
+      max-width: 1200px;
+      padding-right: $unit-jumbo * 2;
+      font-size: $font-size-xl * .85;
       text-transform: initial;
-      line-height: 140%;;
+      line-height: 140%;
+
+      @include mq(lg) {
+        max-width: none;
+        padding-right: $unit-jumbo;
+        font-size: $font-size-lg * .9;
+      }
+
+      @include mq(md) {
+        margin-top: 20px;
+        padding-right: $unit-xs;
+        font-size: $font-size * 1.1;
+      }
+
+      @include mq(sm) {
+        margin-top: $unit-lg;
+        padding-right: $unit-xs;
+        font-size: $font-size-md * .9;
+      }
+    }
+  }
+}
+
+.superhero-brand {
+  padding-top: $unit-xxs;
+  padding-left: $unit-lg;
+  background-color: $color-primary;
+
+  #xiri_logo {
+    float: left;
+    margin-top: $unit-xxs;
+    margin-left: $unit-xs;
+    background-color: $color-primary;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+  a {
+    img{
+      width: 100%;
+      max-width: 120px;
+    }
+  }
+}
+
+.superhero-nav {
+  background-color: $color-primary;
+
+  @include mq(sm) {
+    display: none;
+  }
+
+  #tw_logo {
+    img {
+      width: 100%;
+      max-width: 140px;
+      color: $black;
+    }
+  }
+
+  ul {
+    float: right;
+    width: 500px;
+
+    li {
+      float: left;
+      width: auto;
+      padding: $unit $unit;
+
+      a {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        color: $black;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $white;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

@@ -1753,6 +1753,18 @@ h2 {
     font-weight: 800;
     font-size: 1rem;
     margin-bottom: 1.3em; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    h2 {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 40em) {
+    h2 {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem; } }
 
 h3 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
@@ -2460,10 +2472,62 @@ html[data-useragent*='MSIE 10.0'] .panel {
 /* ==========================================================================
    %% Styling for Potion Superheros %%
    ========================================================================== */
+#nav-modal {
+  -webkit-transition: all .5s elastic;
+          transition: all .5s elastic; }
+  #nav-modal.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(191, 30, 35, 0.95);
+    z-index: 100001; }
+    #nav-modal.active .superhero-nav {
+      padding-top: 2.5rem;
+      background-color: transparent;
+      display: block !important; }
+      #nav-modal.active .superhero-nav ul {
+        float: left;
+        width: 100%; }
+        #nav-modal.active .superhero-nav ul li {
+          float: left;
+          width: 100%;
+          text-align: center; }
+
+#nav-toggle {
+  padding: 1rem 1.563rem 1.563rem 1.563rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  text-align: center;
+  display: none;
+  z-index: 100002; }
+  @media only screen and (max-width: 40em) {
+    #nav-toggle {
+      display: block; } }
+  #nav-toggle:hover i {
+    color: black; }
+  #nav-toggle i {
+    font-size: 1.5rem; }
+
 .superhero {
   position: relative;
   min-height: 300px;
-  padding: 2.5rem 0 3.125rem 3.125rem; }
+  padding: 1rem 0 3.125rem 3.125rem; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .superhero {
+      min-height: 270px;
+      padding: 2rem 2rem 1.5rem 2rem; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .superhero {
+      min-height: 250px;
+      padding: 2rem 2rem 1.5rem 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .superhero {
+      min-height: 250px;
+      padding: 2rem 2rem 1.5rem 2rem; } }
   .superhero h2 {
     color: #ffffff;
     font-size: 4rem;
@@ -2491,9 +2555,6 @@ html[data-useragent*='MSIE 10.0'] .panel {
     margin-bottom: 1rem; }
   .superhero div#version {
     color: #5f0f11; }
-  @media only screen and (max-width: 40em) {
-    .superhero {
-      padding: 2em 2em 1.5em 2em; } }
   .superhero.short {
     min-height: 200px; }
   .superhero.normal {
@@ -2503,25 +2564,117 @@ html[data-useragent*='MSIE 10.0'] .panel {
   .superhero .superhero-img {
     float: left;
     width: 400px; }
+    @media only screen and (max-width: 40em) {
+      .superhero .superhero-img {
+        display: none; } }
     .superhero .superhero-img img.guy-pointing {
       position: absolute;
       top: 25px;
       left: 35px;
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       z-index: 100; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .superhero .superhero-img img.guy-pointing {
+          max-width: 350px; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .superhero .superhero-img img.guy-pointing {
+          top: 20px;
+          left: -60px;
+          max-width: 220px; } }
   .superhero .superhero-content {
     position: absolute;
     right: 0;
     float: left;
     width: calc(100% - 400px); }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .superhero .superhero-content {
+        float: right;
+        width: 80%;
+        padding: 0.625rem 1.875rem 1.875rem 1.875rem; } }
+    @media only screen and (max-width: 40em) {
+      .superhero .superhero-content {
+        width: 100%;
+        padding: 0.625rem 1.875rem 1.875rem 1.875rem; } }
     .superhero .superhero-content h2 {
-      max-width: 1400px; }
-    .superhero .superhero-content h4 {
       max-width: 1400px;
-      font-size: 1.5rem;
+      font-size: 3.6rem;
+      font-weight: 300; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .superhero .superhero-content h2 {
+          width: 100%;
+          font-size: 2.7rem;
+          line-height: 115%; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .superhero .superhero-content h2 {
+          width: 100%;
+          font-size: 2rem;
+          line-height: 115%; } }
+      @media only screen and (max-width: 40em) {
+        .superhero .superhero-content h2 {
+          font-size: 2rem; } }
+    .superhero .superhero-content h4 {
+      max-width: 1200px;
+      padding-right: 6.25rem;
+      font-size: 1.7rem;
       text-transform: initial;
       line-height: 140%; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .superhero .superhero-content h4 {
+          max-width: none;
+          padding-right: 3.125rem;
+          font-size: 1.35rem; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .superhero .superhero-content h4 {
+          margin-top: 20px;
+          padding-right: 0.625rem;
+          font-size: 1.1rem; } }
+      @media only screen and (max-width: 40em) {
+        .superhero .superhero-content h4 {
+          margin-top: 1.563rem;
+          padding-right: 0.625rem;
+          font-size: 1.125rem; } }
+
+.superhero-brand {
+  padding-top: 0.3125rem;
+  padding-left: 1.563rem;
+  background-color: #c01e23; }
+  .superhero-brand #xiri_logo {
+    float: left;
+    margin-top: 0.3125rem;
+    margin-left: 0.625rem;
+    background-color: #c01e23; }
+    .superhero-brand #xiri_logo img {
+      max-width: 100px; }
+  .superhero-brand a img {
+    width: 100%;
+    max-width: 120px; }
+
+.superhero-nav {
+  background-color: #c01e23; }
+  @media only screen and (max-width: 40em) {
+    .superhero-nav {
+      display: none; } }
+  .superhero-nav #tw_logo img {
+    width: 100%;
+    max-width: 140px;
+    color: #000000; }
+  .superhero-nav ul {
+    float: right;
+    width: 500px; }
+    .superhero-nav ul li {
+      float: left;
+      width: auto;
+      padding: 1rem 1rem; }
+      .superhero-nav ul li a {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #000000;
+        text-transform: uppercase; }
+        .superhero-nav ul li a:hover {
+          color: #ffffff;
+          text-transform: uppercase;
+          text-decoration: none; }
 
 /*
   _____  _    ____  _     _____ ____
@@ -2637,9 +2790,21 @@ html[data-useragent*='MSIE 10.0'] .panel {
 .about-block {
   position: relative;
   padding-top: 2.5rem; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .about-block {
+      padding-top: 1.563rem; } }
+  @media only screen and (max-width: 40em) {
+    .about-block {
+      padding-top: 0; } }
   .about-block .about-block-left {
     float: left;
     width: 350px; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .about-block .about-block-left {
+        width: 100%; } }
+    @media only screen and (max-width: 40em) {
+      .about-block .about-block-left {
+        width: 100%; } }
     .about-block .about-block-left .btn {
       position: relative;
       top: 0;
@@ -2647,16 +2812,37 @@ html[data-useragent*='MSIE 10.0'] .panel {
       max-width: 200px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 125px; }
+      margin-top: 200px; }
+      @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+        .about-block .about-block-left .btn {
+          margin-top: 155px; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .about-block .about-block-left .btn {
+          display: none; } }
+      @media only screen and (max-width: 40em) {
+        .about-block .about-block-left .btn {
+          display: none; } }
   .about-block .about-block-right {
     float: left;
     width: calc(100% - 350px);
-    padding: 1.875rem 1.875rem 1.875rem 1.875rem; }
+    padding: 1.875rem 1.875rem 1.875rem 100px; }
     .about-block .about-block-right p.body-text {
       width: 100%;
       max-width: 1000px;
       font-size: 1.25rem;
       line-height: 150%; }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .about-block .about-block-right {
+        padding: 1.875rem 1.875rem 1.875rem 2.5rem; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .about-block .about-block-right {
+        width: 100%;
+        padding: 1.875rem 1.25rem 0 1.875rem; } }
+    @media only screen and (max-width: 40em) {
+      .about-block .about-block-right {
+        margin-top: 1rem;
+        padding: 1.875rem 1.25rem 0 1.875rem;
+        width: 100%; } }
 
 /*
   ____ ___  _   _ _____  _    ____ _____   _   _ ____
@@ -2669,24 +2855,66 @@ html[data-useragent*='MSIE 10.0'] .panel {
 .contact-us-block {
   position: relative;
   padding: 3.125rem 0 3.125rem 3.125rem; }
+  @media only screen and (max-width: 40em) {
+    .contact-us-block {
+      padding: 3.125rem 1rem 3.125rem 1rem; } }
   .contact-us-block p {
     margin-bottom: 2.5rem;
     font-size: 1.25rem; }
+  .contact-us-block .contact-us-left .notranslate span {
+    margin-left: 0 !important; }
   .contact-us-block .contact-us-left .form-controls .btn {
     margin-top: 1rem;
     margin-right: 1rem; }
+  .contact-us-block .contact-us-left label {
+    float: left;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    font-weight: 600; }
+    .contact-us-block .contact-us-left label span {
+      margin-left: 0 !important; }
   .contact-us-block .contact-us-left input {
+    float: left;
     width: 100%;
     max-width: 700px; }
+    @media only screen and (max-width: 40em) {
+      .contact-us-block .contact-us-left input {
+        max-width: 400px; } }
+  .contact-us-block .contact-us-left .buttons input {
+    max-width: 100px;
+    margin-top: 1rem; }
+  .contact-us-block .contact-us-left .notranslate {
+    float: left;
+    width: 100%; }
+    .contact-us-block .contact-us-left .notranslate span {
+      float: left;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem; }
   .contact-us-block .contact-us-left textarea {
     width: 100%;
     max-width: 700px; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .contact-us-block .contact-us-left textarea {
+        max-width: 600px; } }
+    @media only screen and (max-width: 40em) {
+      .contact-us-block .contact-us-left textarea {
+        max-width: 400px; } }
   .contact-us-block .contact-us-right img {
     position: absolute;
     top: 3.125rem;
     right: 1.25rem;
     width: 100%;
     max-width: 450px; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .contact-us-block .contact-us-right img {
+        top: -40px;
+        right: -75px;
+        max-width: 300px; } }
+    @media only screen and (max-width: 40em) {
+      .contact-us-block .contact-us-right img {
+        top: -40px;
+        right: -75px;
+        max-width: 200px; } }
 
 /*
  ____ _____     _____ ____  _____ ____  ____
@@ -2714,52 +2942,6 @@ html[data-useragent*='MSIE 10.0'] .panel {
 
 .divider-4 .box-4 {
   background-color: #c01e23; }
-
-/*
- ____  _   _ ____  _____ ____  _   _ _____ ____   ___    _   _    ___     __
-/ ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \  | \ | |  / \ \   / /
-\___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | | |  \| | / _ \ \ / /
- ___) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| | | |\  |/ ___ \ V /
-|____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\___/  |_| \_/_/   \_\_/
-
-*/
-.superhero-brand {
-  padding-top: 0.3125rem;
-  padding-left: 1.563rem;
-  background-color: #c01e23; }
-  .superhero-brand #xiri_logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #c01e23; }
-    .superhero-brand #xiri_logo img {
-      max-width: 100px; }
-  .superhero-brand a img {
-    width: 100%;
-    max-width: 120px; }
-
-.superhero-nav {
-  background-color: #c01e23; }
-  .superhero-nav #tw_logo img {
-    width: 100%;
-    max-width: 140px;
-    color: black; }
-  .superhero-nav ul {
-    float: right;
-    width: 360px; }
-    .superhero-nav ul li {
-      float: left;
-      width: auto;
-      padding: 1rem 1rem; }
-      .superhero-nav ul li a {
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: #000000;
-        text-transform: uppercase; }
-        .superhero-nav ul li a:hover {
-          color: #ffffff;
-          text-transform: uppercase;
-          text-decoration: none; }
 
 /*
   ___  _   _ ____    _____ ___   ___  _     ____
@@ -2817,21 +2999,33 @@ html[data-useragent*='MSIE 10.0'] .panel {
   position: relative;
   padding: 2.5rem 2.5rem 3.125rem 2.5rem;
   background-color: #dddddd; }
+  @media only screen and (max-width: 40em) {
+    .our-process-block {
+      padding: 1rem 1.563rem 3.125rem 1.563rem; } }
   .our-process-block .our-process-tile {
     text-align: center; }
     .our-process-block .our-process-tile .our-process-step {
+      width: 100%;
+      max-width: 60px;
+      margin-top: 1.563rem;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 1.563rem;
-      width: 70px;
-      padding: 1rem;
+      padding: 0.625rem 1rem 0.625rem 1rem;
       font-size: 2rem;
       font-weight: 600;
       text-align: center;
-      background-color: #ffffff;
-      color: #c01e23;
-      border: 2px solid #c01e23;
-      border-radius: 50%; }
+      background-color: transparent;
+      border: 2px solid #000000;
+      color: #000000; }
+      @media only screen and (max-width: 40em) {
+        .our-process-block .our-process-tile .our-process-step {
+          margin-top: 2.5rem;
+          padding: 0.625rem;
+          background-color: #000000;
+          border: 0;
+          font-size: 1.5rem;
+          color: #ffffff; } }
     .our-process-block .our-process-tile h4 {
       padding-bottom: 1rem;
       font-weight: 600;
@@ -2854,29 +3048,50 @@ html[data-useragent*='MSIE 10.0'] .panel {
   position: relative;
   float: left;
   margin-top: 80px;
-  padding: 2.5rem 1.875rem 3.125rem 2.5rem;
+  padding: 2.5rem 1.875rem 3.125rem 1.875rem;
   border-top: 1px solid #cccccc; }
   .our-services-block p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem; }
   .our-services-block .services-tile {
     float: left;
-    width: calc(50% - 20px);
+    width: calc(33.333% - 20px);
+    min-height: 200px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
     margin: 10px;
     margin-top: 1.25rem;
     padding: 1rem 1rem 0.625rem 1.563rem;
     display: inline-block; }
-    .our-services-block .services-tile.left-side {
-      margin-left: 0; }
-    .our-services-block .services-tile.right-side {
-      margin-right: 0; }
+    @media only screen and (min-width: 90.063em) and (max-width: 124em) {
+      .our-services-block .services-tile {
+        width: calc(50% - 20px);
+        min-height: 200px; } }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .our-services-block .services-tile {
+        width: calc(50% - 20px);
+        min-height: 200px; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .our-services-block .services-tile {
+        width: 100%;
+        margin-left: 0;
+        padding: 1.25rem 0.625rem 0.625rem 0.625rem; } }
+    @media only screen and (max-width: 40em) {
+      .our-services-block .services-tile {
+        width: 100%;
+        margin-left: 0; } }
     .our-services-block .services-tile .tile-left {
       float: left;
       width: 80px; }
       .our-services-block .services-tile .tile-left img {
         max-width: 75px; }
+        @media only screen and (max-width: 40em) {
+          .our-services-block .services-tile .tile-left img {
+            margin-top: 1rem; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .our-services-block .services-tile .tile-left {
+          width: 100%;
+          text-align: center; } }
     .our-services-block .services-tile .tile-right {
       float: left;
       width: calc(100% - 80px);
@@ -2884,9 +3099,25 @@ html[data-useragent*='MSIE 10.0'] .panel {
       .our-services-block .services-tile .tile-right h4 {
         font-size: 1.25rem;
         font-weight: 600; }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .our-services-block .services-tile .tile-right h4 {
+            margin-top: 1rem;
+            text-align: center; } }
       .our-services-block .services-tile .tile-right p {
         font-size: 1.25rem;
         line-height: 145%; }
+        @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+          .our-services-block .services-tile .tile-right p {
+            font-size: 1rem; } }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .our-services-block .services-tile .tile-right p {
+            font-size: 1rem; } }
+        @media only screen and (max-width: 40em) {
+          .our-services-block .services-tile .tile-right p {
+            font-size: 1rem; } }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .our-services-block .services-tile .tile-right {
+          width: 100%; } }
 
 /*
   ___  _   _ ____   __        _____  ____  _  __
@@ -2899,6 +3130,12 @@ html[data-useragent*='MSIE 10.0'] .panel {
 .our-work-block {
   position: relative;
   padding: 2.5rem 1.875rem 3.125rem 2.5rem; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .our-work-block {
+      padding: 1.563rem 1rem 1.875rem 1rem; } }
+  @media only screen and (max-width: 40em) {
+    .our-work-block {
+      padding: 1.563rem 1.563rem 1.875rem 1.563rem; } }
   .our-work-block h2 {
     color: #ffffff; }
   .our-work-block p {
@@ -2908,38 +3145,65 @@ html[data-useragent*='MSIE 10.0'] .panel {
     float: left;
     width: calc(25% - .5rem);
     min-height: 550px;
-    margin: 0.25rem;
+    margin: .25rem;
     padding: 1rem;
     border: 1px solid #cccccc;
     background-color: #ffffff;
     display: inline-block; }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .our-work-block .our-work-tile {
+        width: calc(33.333% - .5rem); } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .our-work-block .our-work-tile {
+        width: calc(50% - .5rem);
+        padding: 1.563rem 0.625rem 1rem 0.625rem; } }
+    @media only screen and (max-width: 40em) {
+      .our-work-block .our-work-tile {
+        width: 100%; } }
     .our-work-block .our-work-tile h3 {
       float: left;
       width: 100%;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       color: #000000;
       text-transform: uppercase; }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .our-work-block .our-work-tile h3 {
+          font-size: 1.25rem; } }
     .our-work-block .our-work-tile .company {
       float: left;
       width: 100%;
+      font-size: 0.9rem;
       color: #c01e23; }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .our-work-block .our-work-tile .company {
+          font-size: 1rem;
+          line-height: 135%; } }
     .our-work-block .our-work-tile span.technology {
       float: left;
       width: 100%;
       margin-top: 1rem;
       margin-bottom: 1.875rem;
-      color: #cccccc;
+      font-size: 1rem;
+      color: #999999;
       text-transform: uppercase; }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .our-work-block .our-work-tile span.technology {
+          font-size: 0.875rem;
+          line-height: 135%; } }
     .our-work-block .our-work-tile .img-crop {
       float: left;
       width: 100%;
       max-height: 300px;
-      background-color: pink;
       overflow: hidden; }
     .our-work-block .our-work-tile .buttons {
       float: left;
       width: 100%;
       margin-top: 1.25rem; }
+      .our-work-block .our-work-tile .buttons .btn {
+        margin-right: 0.625rem; }
+        @media only screen and (max-width: 40em) {
+          .our-work-block .our-work-tile .buttons .btn {
+            margin-top: 1rem; } }
 
 /*
   ___  _   _  ___ _____ _____   ____  _     ___   ____ _  __
@@ -2953,16 +3217,41 @@ html[data-useragent*='MSIE 10.0'] .panel {
   margin-top: 1.563rem;
   padding: 2.5rem 1.875rem 1.875rem 100px;
   border-top: 1px solid #cccccc; }
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    .quote-block {
+      padding: 2.5rem 1.875rem 1.875rem 100px; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .quote-block {
+      padding: 2.5rem 1.875rem 1.875rem 3.125rem; } }
+  @media only screen and (max-width: 40em) {
+    .quote-block {
+      padding: 2.5rem 1.875rem 0 1.875rem; } }
   .quote-block h3.quote {
     max-width: 2000px;
     padding-left: 3.125rem;
-    padding-right: 31.25rem;
+    padding-right: 37.5rem;
     font-family: "Roboto", sans-serif;
     font-size: 4rem;
     font-weight: 200;
     line-height: 115%;
     color: #c01e23;
     border-left: 4px solid #c01e23; }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .quote-block h3.quote {
+        max-width: none;
+        padding-right: 0;
+        font-size: 3rem; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .quote-block h3.quote {
+        max-width: none;
+        padding-right: 0;
+        font-size: 3rem; } }
+    @media only screen and (max-width: 40em) {
+      .quote-block h3.quote {
+        max-width: none;
+        padding-right: 0;
+        font-size: 2rem;
+        font-weight: 300; } }
   .quote-block figcaption {
     float: left;
     width: 100%;
@@ -2971,9 +3260,25 @@ html[data-useragent*='MSIE 10.0'] .panel {
     font-weight: 600; }
   .quote-block img {
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: 1.25rem;
-    max-width: 400px; }
+    max-width: 600px;
+    z-index: 1001; }
+    @media only screen and (min-width: 90.063em) and (max-width: 124em) {
+      .quote-block img {
+        max-width: 500px; } }
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+      .quote-block img {
+        position: static;
+        margin-top: 1.563rem; } }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .quote-block img {
+        position: static;
+        margin-top: 1.563rem; } }
+    @media only screen and (max-width: 40em) {
+      .quote-block img {
+        position: static;
+        margin-top: 1.563rem; } }
   .quote-block.reverse {
     padding: 1.875rem 1.875rem 1.875rem 1.875rem;
     border-top: 0;
@@ -2997,14 +3302,32 @@ html[data-useragent*='MSIE 10.0'] .panel {
   position: relative;
   padding: 2.5rem 2.5rem 3.125rem 2.5rem;
   background-color: #c01e23; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .showcase-block {
+      padding: 2.5rem 1.563rem 3.125rem 1.563rem; } }
+  @media only screen and (max-width: 40em) {
+    .showcase-block {
+      padding: 2.5rem 1.563rem 3.125rem 1.563rem; } }
   .showcase-block h2 {
     padding-left: 1.875rem;
     color: #ffffff; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .showcase-block h2 {
+        padding-left: 0; } }
+    @media only screen and (max-width: 40em) {
+      .showcase-block h2 {
+        padding-left: 0; } }
   .showcase-block p {
     margin-bottom: 1.875rem;
     padding-left: 1.875rem;
     font-size: 1.25rem;
     color: #ffffff; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .showcase-block p {
+        padding-left: 0; } }
+    @media only screen and (max-width: 40em) {
+      .showcase-block p {
+        padding-left: 0; } }
   .showcase-block .showcase-tile {
     float: left;
     width: calc(25% - 20px);
@@ -3012,6 +3335,14 @@ html[data-useragent*='MSIE 10.0'] .panel {
     padding: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
     border: 1px solid #ffffff;
     text-align: center; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .showcase-block .showcase-tile {
+        width: 100%;
+        margin-left: 0; } }
+    @media only screen and (max-width: 40em) {
+      .showcase-block .showcase-tile {
+        width: 100%;
+        margin-left: 0; } }
 
 .row {
   max-width: none; }

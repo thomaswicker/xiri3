@@ -661,7 +661,7 @@
   // ######################### OUR PROCESS #########################
 
   %section.medium-12.columns.our-process-block
-    .medium-3.columns.our-process-tile
+    .medium-12.large-3.columns.our-process-tile
       .our-process-step
         1
       %h4
@@ -669,7 +669,7 @@
       %p
         The most important step in successful project completion is preparation. By communication with our clients extensively (phone, email, chat) and by asking the right questions we obtain all of the information that will be required for our team to accomplish the goals.
 
-    .medium-3.columns.our-process-tile
+    .medium-12.large-3.columns.our-process-tile
       .our-process-step
         2
       %h4
@@ -677,7 +677,7 @@
       %p
         We produce a design mock up based on the information that we obtain. We test several approaches and refine the prototype through several editing stages based on your feedback. Once the prototype is approved we design the rest of the pages and go through the same process.
 
-    .medium-3.columns.our-process-tile
+    .medium-12.large-3.columns.our-process-tile
       .our-process-step
         3
       %h4
@@ -685,7 +685,7 @@
       %p
         We convert static page designs into web ready HTML5 and CSS format. Afterwards we integrate the markup into a CMS and build required functionality. We go through another round of revisions prior to moving to the final stage. Throughout this stage of process our work can be observer on the development server.
 
-    .medium-3.columns.our-process-tile
+    .medium-12.large-3.columns.our-process-tile
       .our-process-step
         4
       %h4
@@ -763,28 +763,85 @@
   // ######################### CONTACT US #########################
 
   %section.medium-12.columns.contact-us-block
-    .medium-12.columns
-      %h2 Contact Us
-      %p
-        Drop us a line with the form below!
-
     .medium-7.columns.contact-us-left
-      .form-content
-        %label Name
-        %input{ :type => "text" }
+      %script{:src => "js/wufoo.js"}
 
-        %label Email
-        %input{ :type => "text" }
+      %form#form1.wufoo.topLabel.page{"accept-charset" => "UTF-8", :action => "https://xirimedia.wufoo.com/forms/z1f2pwc61cvknbf/#public", :autocomplete => "off", :enctype => "multipart/form-data", :method => "post", :name => "form1", :novalidate => ""}
+        %header#header.info
+          %h2 Contact Us - XIRI
+          %p
+            Drop us a line with the form below!
 
-        %label Phone
-        %input{ :type => "tel" }
+        %ul.margin.top.lg
+          %li#foli1.notranslate
+            %label#title1.desc{:for => "Field1"}
+              %span
+                Name
+              %span#req_1.req *
+            %input#Field1.field.text.medium{:maxlength => "255", :name => "Field1", :onkeyup => "", :required => "", :tabindex => "1", :type => "text", :value => ""}
 
-        %label Message
-        %textarea{ :type => "text" }
+          %li#foli3.notranslate
+            %label#title3.desc{:for => "Field3"}
+              %span
+                Company Name
+            %div
+              %input#Field3.field.text.medium{:maxlength => "255", :name => "Field3", :onkeyup => "", :tabindex => "2", :type => "text", :value => ""}/
 
-      .form-controls
-        %a.btn.btn-primary{ :href => "" } Send
-        %a.btn.btn-secondary{ :href => "" } Clear
+          %li#foli12.notranslate
+            %label#title12.desc{:for => "Field12"}
+              %span
+                Email
+              %span#req_12.req *
+            %input#Field12.field.text.medium{:maxlength => "255", :name => "Field12", :required => "", :spellcheck => "false", :tabindex => "3", :type => "email", :value => ""}/
 
+          %li#foli11.phone.notranslate
+            %label#title11.desc{:for => "Field11"}
+              %span
+                Phone Number
+            %span.float-left
+              %input#Field11.field.text{:maxlength => "3", :name => "Field11", :size => "3", :tabindex => "4", :type => "tel", :value => ""}/
+            %span.float-left.symbol -
+            %span.float-left
+              %input#Field11-1.field.text{:maxlength => "3", :name => "Field11-1", :size => "3", :tabindex => "5", :type => "tel", :value => ""}/
+            %span.float-left.symbol -
+            %span.float-left
+              %input#Field11-2.field.text{:maxlength => "4", :name => "Field11-2", :size => "4", :tabindex => "6", :type => "tel", :value => ""}/
+
+          %li#foli9.notranslate
+            %label#title9.desc{:for => "Field9"}
+              %span
+                Message
+            %textarea#Field9.field.textarea.medium{:cols => "50", :name => "Field9", :onkeyup => "", :rows => "10", :spellcheck => "true", :tabindex => "7"}
+
+          %li.buttons
+            %input#submit.btn.btn-primary.submit{:name => "saveForm", :type => "submit", :value => "Submit"}/
+
+          %li.hide
+            %label{:for => "comment"} Do Not Fill This Out
+            %textarea#comment{:cols => "1", :name => "comment", :rows => "1"}
+            %input#idstamp{:name => "idstamp", :type => "hidden", :value => "UxQrb+OUV3cbZ1czAo79MCvZxrwljwryZGs7TL5lPgo="}/
+
+    -#   %h2 Contact Us
+    -#   %p
+    -#     Drop us a line with the form below!
+    -#
+    -# .medium-7.columns.contact-us-left
+    -#   .form-content
+    -#     %label Name
+    -#     %input{ :type => "text" }
+    -#
+    -#     %label Email
+    -#     %input{ :type => "text" }
+    -#
+    -#     %label Phone
+    -#     %input{ :type => "tel" }
+    -#
+    -#     %label Message
+    -#     %textarea{ :type => "text" }
+    -#
+    -#   .form-controls
+    -#     %a.btn.btn-primary{ :href => "" } Send
+    -#     %a.btn.btn-secondary{ :href => "" } Clear
+    -#
     .medium-5.columns.contact-us-right
       %img{ :src => "img/woman_on_phone.svg",:alt => "Woman on the phone" }

@@ -2,8 +2,8 @@
 <html ng-app='xiriApp'>
   <head>
     <meta charset='UTF-8'>
-      <title>Potion CSS Framework</title>
-      <meta content='Flexible Mobile First CSS Framework' name='description'>
+      <title>XIRI Media, LLC - www.xiri.io</title>
+      <meta content='XIRI Media, LLC - www.xiri.io' name='description'>
       <meta content='IE=edge' http-equiv='X-UA-Compatible'>
       <!-- To ensure proper rendering and style for mobile devices -->
       <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -24,24 +24,49 @@
             <img alt='XIRI Logo' src='img/xiri_logo.svg'>
           </a>
         </div>
-        <div class='superhero-nav medium-10 columns'>
-          <ul>
-            <li>
-              <a href='#gettingstarted' ng-class="{active: $route.current.activePage == 'gettingstarted'}">
-                Getting Started
-              </a>
-            </li>
-            <li>
-              <a href='#components' ng-class="{active: $route.current.activePage == 'components'}">
-                Components
-              </a>
-            </li>
-            <li>
-              <a class='tw_logo' href='http://www.thomaswicker.com' id='tw_logo' target='blank'>
-                <img alt='Link to thomaswicker.com' src='img/tw_logo.svg'>
-              </a>
-            </li>
-          </ul>
+        <div id='nav-modal'>
+          <div class='superhero-nav medium-10 columns hide-for-small-only'>
+            <ul>
+              <li>
+                <a href='#home' ng-class="{active: $route.current.activePage == 'home'}">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href='#work' ng-class="{active: $route.current.activePage == 'work'}">
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href='#process' ng-class="{active: $route.current.activePage == 'process'}">
+                  Process
+                </a>
+              </li>
+              <li>
+                <a href='#clients' ng-class="{active: $route.current.activePage == 'clients'}">
+                  Clients
+                </a>
+              </li>
+              <li>
+                <a href='#contact' ng-class="{active: $route.current.activePage == 'contact'}">
+                  Contact
+                </a>
+              </li>
+              <li class='hide-for-small-only'>
+                <a class='tw_logo' href='http://www.thomaswicker.com' id='tw_logo' target='blank'>
+                  <img alt='Link to thomaswicker.com' src='img/tw_logo.svg'>
+                </a>
+              </li>
+              <li class='show-for-small-only'>
+                <a href='http://www.thomaswicker.com' target='blank'>
+                  www.thomaswicker.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id='nav-toggle'>
+          <i class='fa fa-bars'></i>
         </div>
       </div>
       <div class='row collapse'>
@@ -63,6 +88,17 @@
     <ng-view></ng-view>
     <!-- Magical Spells -->
     <script src='bower_components/jquery/dist/jquery.min.js'></script>
+    <script>
+      $(document).ready(function() {
+        var $superoHeroNav = $('.superhero-nav'),
+            $navToggle     = $('#nav-toggle'),
+            $navModal      = $('#nav-modal');
+      
+          $navToggle.on('click', function () {
+            $navModal.toggleClass('active');
+          });
+      });
+    </script>
     <script src='bower_components/foundation-sites/dist/foundation.min.js'></script>
     <script src='bower_components/angular/angular.min.js'></script>
     <script src='bower_components/angular-route/angular-route.min.js'></script>

@@ -10,9 +10,29 @@
   position: relative;
   padding-top: $unit-xxl;
 
+  @include mq(md) {
+    padding-top: $unit-lg;
+  }
+
+  @include mq(sm) {
+    padding-top: 0;
+  }
+
   .about-block-left {
     float: left;
     width: 350px;
+
+    @include mq(lg) {
+
+    }
+
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+    }
 
     .btn {
       position: relative;
@@ -21,20 +41,47 @@
       max-width: 200px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 125px;
+      margin-top: 200px;
+
+      @include mq(lg) {
+        margin-top: 155px;
+      }
+
+      @include mq(md) {
+        display: none;
+      }
+
+      @include mq(sm) {
+        display: none;
+      }
     }
   }
 
   .about-block-right {
     float: left;
     width: calc(100% - 350px);
-    padding: $unit-xl $unit-xl $unit-xl $unit-xl;
+    padding: $unit-xl $unit-xl $unit-xl 100px;
 
     p.body-text {
       width: 100%;
       max-width: 1000px;
       font-size: $font-size-md;
       line-height: 150%;
+    }
+
+    @include mq(lg) {
+      padding: $unit-xl $unit-xl $unit-xl $unit-xxl;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      padding: $unit-xl $unit-md 0 $unit-xl;
+    }
+
+    @include mq(sm) {
+      margin-top: $unit;
+      padding: $unit-xl $unit-md 0 $unit-xl;
+      width: 100%;
     }
   }
 }

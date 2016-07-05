@@ -2,8 +2,8 @@
 %html{"ng-app" => "xiriApp"}
   %head
     %meta{:charset => "UTF-8"}
-      %title Potion CSS Framework
-      %meta{:content => "Flexible Mobile First CSS Framework", :name => "description"}
+      %title XIRI Media, LLC - www.xiri.io
+      %meta{:content => "XIRI Media, LLC - www.xiri.io", :name => "description"}
       %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
       / To ensure proper rendering and style for mobile devices
       %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
@@ -30,18 +30,33 @@
           %a#xiri_logo.xiri_logo{:href => "http://www.xiri.io"}
             %img{:alt => "XIRI Logo", :src => "img/xiri_logo.svg"}
 
-        .superhero-nav.medium-10.columns
-          %ul
-            %li
-              %a{:href => "#gettingstarted", "ng-class" => "{active: $route.current.activePage == 'gettingstarted'}"}
-                Getting Started
-            %li
-              %a{:href => "#components", "ng-class" => "{active: $route.current.activePage == 'components'}"}
-                Components
+        #nav-modal
+          .superhero-nav.medium-10.columns.hide-for-small-only
+            %ul
+              %li
+                %a{:href => "#home", "ng-class" => "{active: $route.current.activePage == 'home'}"}
+                  Home
+              %li
+                %a{:href => "#work", "ng-class" => "{active: $route.current.activePage == 'work'}"}
+                  Work
+              %li
+                %a{:href => "#process", "ng-class" => "{active: $route.current.activePage == 'process'}"}
+                  Process
+              %li
+                %a{:href => "#clients", "ng-class" => "{active: $route.current.activePage == 'clients'}"}
+                  Clients
+              %li
+                %a{:href => "#contact", "ng-class" => "{active: $route.current.activePage == 'contact'}"}
+                  Contact
+              %li.hide-for-small-only
+                %a#tw_logo.tw_logo{:href => "http://www.thomaswicker.com", :target => "blank"}
+                  %img{:alt => "Link to thomaswicker.com", :src => "img/tw_logo.svg"}
+              %li.show-for-small-only
+                %a{:href => "http://www.thomaswicker.com", :target => "blank"}
+                  www.thomaswicker.com
 
-            %li
-              %a#tw_logo.tw_logo{:href => "http://www.thomaswicker.com", :target => "blank"}
-                %img{:alt => "Link to thomaswicker.com", :src => "img/tw_logo.svg"}
+        #nav-toggle
+          %i.fa.fa-bars
 
       .row.collapse
         %superhero.medium-12.columns.bg-color.primary
@@ -56,8 +71,20 @@
 
     %ng-view
 
+
     / Magical Spells
     %script{:src => "bower_components/jquery/dist/jquery.min.js"}
+
+    :javascript
+      $(document).ready(function() {
+        var $superoHeroNav = $('.superhero-nav'),
+            $navToggle     = $('#nav-toggle'),
+            $navModal      = $('#nav-modal');
+
+          $navToggle.on('click', function () {
+            $navModal.toggleClass('active');
+          });
+      });
 
     %script{:src => "bower_components/foundation-sites/dist/foundation.min.js"}
     %script{:src => "bower_components/angular/angular.min.js"}
