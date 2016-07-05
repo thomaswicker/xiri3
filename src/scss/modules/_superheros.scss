@@ -269,15 +269,17 @@
 
   #tw_logo {
     img {
+      position: relative;
+      top: -3px;
       width: 100%;
-      max-width: 140px;
-      color: $black;
+      max-width: 30px;
+      fill: $black;
     }
   }
 
   ul {
     float: right;
-    width: 500px;
+    width: 510px;
 
     li {
       float: left;

@@ -2656,12 +2656,14 @@ html[data-useragent*='MSIE 10.0'] .panel {
     .superhero-nav {
       display: none; } }
   .superhero-nav #tw_logo img {
+    position: relative;
+    top: -3px;
     width: 100%;
-    max-width: 140px;
-    color: #000000; }
+    max-width: 30px;
+    fill: #000000; }
   .superhero-nav ul {
     float: right;
-    width: 500px; }
+    width: 510px; }
     .superhero-nav ul li {
       float: left;
       width: auto;
