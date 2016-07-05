@@ -28,27 +28,27 @@
           <div class='superhero-nav medium-10 columns hide-for-small-only'>
             <ul>
               <li>
-                <a href='#home' ng-class="{active: $route.current.activePage == 'home'}">
+                <a href='#'>
                   Home
                 </a>
               </li>
               <li>
-                <a href='#work' ng-class="{active: $route.current.activePage == 'work'}">
+                <a href='#'>
                   Work
                 </a>
               </li>
               <li>
-                <a href='#process' ng-class="{active: $route.current.activePage == 'process'}">
+                <a href='#'>
                   Process
                 </a>
               </li>
               <li>
-                <a href='#clients' ng-class="{active: $route.current.activePage == 'clients'}">
+                <a href='#'>
                   Clients
                 </a>
               </li>
               <li>
-                <a href='#contact' ng-class="{active: $route.current.activePage == 'contact'}">
+                <a du-smooth-scroll='' href='#contact'>
                   Contact
                 </a>
               </li>
@@ -90,9 +90,10 @@
     <script src='bower_components/jquery/dist/jquery.min.js'></script>
     <script>
       $(document).ready(function() {
-        var $superoHeroNav = $('.superhero-nav'),
-            $navToggle     = $('#nav-toggle'),
-            $navModal      = $('#nav-modal');
+        var $superoHeroNav      = $('.superhero-nav'),
+            $superoHeroNavBtns  = $('.superhero-nav ul li a'),
+            $navToggle          = $('#nav-toggle'),
+            $navModal           = $('#nav-modal');
       
           $navToggle.on('click', function () {
             $navModal.toggleClass('active');
@@ -102,6 +103,7 @@
     <script src='bower_components/foundation-sites/dist/foundation.min.js'></script>
     <script src='bower_components/angular/angular.min.js'></script>
     <script src='bower_components/angular-route/angular-route.min.js'></script>
+    <script src='bower_components/angular-scroll/angular-scroll.min.js'></script>
     <!-- /Live reload for development -->
     <script src='js/application.min.js'></script>
     <script>

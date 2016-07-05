@@ -19,7 +19,8 @@
     "jquery": "^2.2.4",
     "foundation-sites": "^6.2.3",
     "components-font-awesome": "^4.6.3",
-    "masonry": "^4.1.0"
+    "masonry": "^4.1.0",
+    "angular-scroll": "^1.0.0"
   },
   "devDependencies": {
     "angular": "^1.5.7",

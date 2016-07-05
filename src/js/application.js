@@ -7,7 +7,7 @@
 */
 
 //Setting up the core Angular App - potion
-var xiri = angular.module('xiriApp', ['ngRoute']);
+var xiri = angular.module('xiriApp', ['ngRoute', 'duScroll']);
 
 /*
   ____   ___  _   _ _____ ___ _   _  ____

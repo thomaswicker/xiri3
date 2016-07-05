@@ -1,7 +1,7 @@
-%section{"ng-controller" => "ContentController", "ng-init" => "init()"}
+%section{ "ng-controller" => "ContentController", "ng-init" => "init()" }
 
   // ######################### ABOUT US #########################
-  %section.about-block.bg-color.white.medium-12.columns
+  %section.about-block.bg-color.white.medium-12.columns#home
     .about-block-left
       %a.btn.btn-primary{ :href => "" }
         Contact Us
@@ -85,7 +85,7 @@
 
   // ######################### OUR WORK #########################
 
-  %section.medium-12.columns.bg-color.black.our-work-block
+  %section.medium-12.columns.bg-color.black.our-work-block#work
     %h2 Our Work
     %p
       Check out the latest projects we’ve been working on.
@@ -507,7 +507,7 @@
 
   // ######################### OUR TOOLS #########################
 
-  %section.medium-12.columns.our-tools-block
+  %section.medium-12.columns.our-tools-block#process
     %h2 Tools & Process
 
     %p
@@ -711,7 +711,7 @@
 
   // ######################### WHO WE'VE WORKED WITH #########################
 
-  %section.medium-12.columns.showcase-block
+  %section.medium-12.columns.showcase-block#clients
     %h2 Who We've Worked With
     %p
       Is name-dropping allowed?
@@ -762,7 +762,7 @@
 
   // ######################### CONTACT US #########################
 
-  %section.medium-12.columns.contact-us-block
+  %section.medium-12.columns.contact-us-block#contact
     .medium-7.columns.contact-us-left
       %script{:src => "js/wufoo.js"}
 

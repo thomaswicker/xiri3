@@ -34,19 +34,19 @@
           .superhero-nav.medium-10.columns.hide-for-small-only
             %ul
               %li
-                %a{:href => "#home", "ng-class" => "{active: $route.current.activePage == 'home'}"}
+                %a{:href => "#"}
                   Home
               %li
-                %a{:href => "#work", "ng-class" => "{active: $route.current.activePage == 'work'}"}
+                %a{:href => "#"}
                   Work
               %li
-                %a{:href => "#process", "ng-class" => "{active: $route.current.activePage == 'process'}"}
+                %a{:href => "#"}
                   Process
               %li
-                %a{:href => "#clients", "ng-class" => "{active: $route.current.activePage == 'clients'}"}
+                %a{:href => "#"}
                   Clients
               %li
-                %a{:href => "#contact", "ng-class" => "{active: $route.current.activePage == 'contact'}"}
+                %a{:href => "#contact", "du-smooth-scroll" => "" }
                   Contact
               %li.hide-for-small-only
                 %a#tw_logo.tw_logo{:href => "http://www.thomaswicker.com", :target => "blank"}
@@ -77,9 +77,10 @@
 
     :javascript
       $(document).ready(function() {
-        var $superoHeroNav = $('.superhero-nav'),
-            $navToggle     = $('#nav-toggle'),
-            $navModal      = $('#nav-modal');
+        var $superoHeroNav      = $('.superhero-nav'),
+            $superoHeroNavBtns  = $('.superhero-nav ul li a'),
+            $navToggle          = $('#nav-toggle'),
+            $navModal           = $('#nav-modal');
 
           $navToggle.on('click', function () {
             $navModal.toggleClass('active');
@@ -89,6 +90,7 @@
     %script{:src => "bower_components/foundation-sites/dist/foundation.min.js"}
     %script{:src => "bower_components/angular/angular.min.js"}
     %script{:src => "bower_components/angular-route/angular-route.min.js"}
+    %script{:src => "bower_components/angular-scroll/angular-scroll.min.js"}
 
     //Live reload for development
     %script{:src => "js/application.min.js"}
