@@ -83,8 +83,8 @@
   }
 
   @include mq(sm) {
-    min-height: 250px;
-    padding: 2rem 2rem 1.5rem 2rem;
+    min-height: 320px;
+    padding: 1rem 2rem 2.5rem 2rem;
   }
 
   h2 {
@@ -112,7 +112,7 @@
 
       @include mq(sm) {
         line-height: $base-line-height;
-        font-size: .95rem;
+        font-size: .9rem;
       }
     }
 
@@ -190,11 +190,12 @@
       max-width: 1400px;
       font-size: $font-size-jumbo * .9;
       font-weight: $font-weight-light;
+      line-height: 135%;
 
       @include mq(lg) {
         width: 100%;
         font-size: $font-size-xxl * .9;
-        line-height: 115%;
+        line-height: 135%;
       }
 
       @include mq(md) {
@@ -205,6 +206,7 @@
 
       @include mq(sm) {
         font-size: $font-size-xl;
+        line-height: 115%;
       }
     }
 
@@ -292,10 +294,18 @@
         color: $black;
         text-transform: uppercase;
 
+        @include mq(sm) {
+          color: $white;
+        }
+
         &:hover {
           color: $white;
           text-transform: uppercase;
           text-decoration: none;
+
+          @include mq(sm) {
+
+          }
         }
       }
     }

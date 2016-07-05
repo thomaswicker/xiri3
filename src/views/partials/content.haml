@@ -764,7 +764,7 @@
 
   %section.medium-12.columns.contact-us-block#contact
     .medium-7.columns.contact-us-left
-      %script{:src => "js/wufoo.js"}
+      %script{ :src => "javascripts/wufoo.js" }
 
       %form#form1.wufoo.topLabel.page{"accept-charset" => "UTF-8", :action => "https://xirimedia.wufoo.com/forms/z1f2pwc61cvknbf/#public", :autocomplete => "off", :enctype => "multipart/form-data", :method => "post", :name => "form1", :novalidate => ""}
         %header#header.info
@@ -819,29 +819,7 @@
           %li.hide
             %label{:for => "comment"} Do Not Fill This Out
             %textarea#comment{:cols => "1", :name => "comment", :rows => "1"}
-            %input#idstamp{:name => "idstamp", :type => "hidden", :value => "UxQrb+OUV3cbZ1czAo79MCvZxrwljwryZGs7TL5lPgo="}/
+            %input#idstamp{:name => "idstamp", :type => "hidden", :value => "UxQrb+OUV3cbZ1czAo79MCvZxrwljwryZGs7TL5lPgo="}
 
-    -#   %h2 Contact Us
-    -#   %p
-    -#     Drop us a line with the form below!
-    -#
-    -# .medium-7.columns.contact-us-left
-    -#   .form-content
-    -#     %label Name
-    -#     %input{ :type => "text" }
-    -#
-    -#     %label Email
-    -#     %input{ :type => "text" }
-    -#
-    -#     %label Phone
-    -#     %input{ :type => "tel" }
-    -#
-    -#     %label Message
-    -#     %textarea{ :type => "text" }
-    -#
-    -#   .form-controls
-    -#     %a.btn.btn-primary{ :href => "" } Send
-    -#     %a.btn.btn-secondary{ :href => "" } Clear
-    -#
     .medium-5.columns.contact-us-right
       %img{ :src => "img/woman_on_phone.svg",:alt => "Woman on the phone" }

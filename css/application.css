@@ -2526,8 +2526,8 @@ html[data-useragent*='MSIE 10.0'] .panel {
       padding: 2rem 2rem 1.5rem 2rem; } }
   @media only screen and (max-width: 40em) {
     .superhero {
-      min-height: 250px;
-      padding: 2rem 2rem 1.5rem 2rem; } }
+      min-height: 320px;
+      padding: 1rem 2rem 2.5rem 2rem; } }
   .superhero h2 {
     color: #ffffff;
     font-size: 4rem;
@@ -2549,7 +2549,7 @@ html[data-useragent*='MSIE 10.0'] .panel {
     @media only screen and (max-width: 40em) {
       .superhero h4 {
         line-height: 1.3rem;
-        font-size: .95rem; } }
+        font-size: .9rem; } }
   .superhero a.btn {
     margin-left: 1rem;
     margin-bottom: 1rem; }
@@ -2599,12 +2599,13 @@ html[data-useragent*='MSIE 10.0'] .panel {
     .superhero .superhero-content h2 {
       max-width: 1400px;
       font-size: 3.6rem;
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 135%; }
       @media only screen and (min-width: 64.063em) and (max-width: 90em) {
         .superhero .superhero-content h2 {
           width: 100%;
           font-size: 2.7rem;
-          line-height: 115%; } }
+          line-height: 135%; } }
       @media only screen and (min-width: 40.063em) and (max-width: 64em) {
         .superhero .superhero-content h2 {
           width: 100%;
@@ -2612,7 +2613,8 @@ html[data-useragent*='MSIE 10.0'] .panel {
           line-height: 115%; } }
       @media only screen and (max-width: 40em) {
         .superhero .superhero-content h2 {
-          font-size: 2rem; } }
+          font-size: 2rem;
+          line-height: 115%; } }
     .superhero .superhero-content h4 {
       max-width: 1200px;
       padding-right: 6.25rem;
@@ -2673,6 +2675,9 @@ html[data-useragent*='MSIE 10.0'] .panel {
         font-weight: 600;
         color: #000000;
         text-transform: uppercase; }
+        @media only screen and (max-width: 40em) {
+          .superhero-nav ul li a {
+            color: #ffffff; } }
         .superhero-nav ul li a:hover {
           color: #ffffff;
           text-transform: uppercase;
