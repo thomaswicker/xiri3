@@ -45,11 +45,15 @@
 
     @include mq (md) {
       width: calc(50% - .5rem);
-      padding: $unit-lg $unit-xs $unit $unit-xs;
+      padding: $unit-lg .25rem $unit-sm .25rem;
+      display: inline;
     }
 
     @include mq (sm) {
       width: 100%;
+      height: auto;
+      min-height: 0;
+      padding: $unit-xs;
     }
 
     h3 {
@@ -111,7 +115,7 @@
         margin-right: $unit-xs;
 
         @include mq (md) {
-
+          padding: $unit-xs $unit-sm;
         }
 
         @include mq (sm) {

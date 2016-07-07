@@ -13,7 +13,7 @@
   border-top: 1px solid $xlight-gray;
 
   @include mq(lg) {
-    padding: $unit-xxl $unit-xl $unit-xl 100px;
+    padding: $unit-xxl $unit-xl $unit-xl 50px;
   }
 
   @include mq(md) {
@@ -37,12 +37,14 @@
 
     @include mq(lg) {
       max-width: none;
+      padding-left: $unit-lg;
       padding-right: 0;
       font-size: $font-size-xxl;
     }
 
     @include mq(md) {
       max-width: none;
+      padding-left: $unit-lg;
       padding-right: 0;
       font-size: $font-size-xxl;
     }
@@ -75,17 +77,19 @@
     }
 
     @include mq(lg) {
-      position: static;
-      margin-top: $unit-lg;
+      top: 190px;
+      right: -150px;
     }
 
     @include mq(md) {
-      position: static;
-      margin-top: $unit-lg;
+      top: 210px;
+      right: -210px;
     }
 
     @include mq(sm) {
       position: static;
+      right: 0;
+      max-width: 380px;
       margin-top: $unit-lg;
     }
   }

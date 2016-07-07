@@ -2513,7 +2513,7 @@ html[data-useragent*='MSIE 10.0'] .panel {
 .superhero {
   position: relative;
   min-height: 300px;
-  padding: 0.625rem 0 3.125rem 3.125rem; }
+  padding: 1rem 0 3.125rem 3.125rem; }
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     .superhero {
       min-height: 270px;
@@ -2521,7 +2521,7 @@ html[data-useragent*='MSIE 10.0'] .panel {
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     .superhero {
       min-height: 250px;
-      padding: 2rem 2rem 1.5rem 2rem; } }
+      padding: 1rem 2rem 1.5rem 2rem; } }
   @media only screen and (max-width: 40em) {
     .superhero {
       min-height: 320px;
@@ -3055,6 +3055,9 @@ html[data-useragent*='MSIE 10.0'] .panel {
   margin-top: 80px;
   padding: 2.5rem 1.875rem 3.125rem 1.875rem;
   border-top: 1px solid #cccccc; }
+  @media only screen and (max-width: 40em) {
+    .our-services-block {
+      margin-top: 30px; } }
   .our-services-block p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem; }
@@ -3080,33 +3083,46 @@ html[data-useragent*='MSIE 10.0'] .panel {
       .our-services-block .services-tile {
         width: 100%;
         margin-left: 0;
-        padding: 1.25rem 0.625rem 0.625rem 0.625rem; } }
+        padding: 1.25rem 0.3125rem 0.625rem 0.3125rem; } }
     @media only screen and (max-width: 40em) {
       .our-services-block .services-tile {
         width: 100%;
+        margin-top: 0.3125rem;
         margin-left: 0; } }
     .our-services-block .services-tile .tile-left {
       float: left;
       width: 80px; }
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .our-services-block .services-tile .tile-left {
+          width: 100%;
+          text-align: center; } }
+      @media only screen and (max-width: 40em) {
+        .our-services-block .services-tile .tile-left {
+          width: 100%;
+          text-align: center; } }
       .our-services-block .services-tile .tile-left img {
         max-width: 75px; }
         @media only screen and (max-width: 40em) {
           .our-services-block .services-tile .tile-left img {
             margin-top: 1rem; } }
-      @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-        .our-services-block .services-tile .tile-left {
-          width: 100%;
-          text-align: center; } }
     .our-services-block .services-tile .tile-right {
       float: left;
       width: calc(100% - 80px);
       padding: 1rem 1rem 1rem 1.563rem; }
+      @media only screen and (max-width: 40em) {
+        .our-services-block .services-tile .tile-right {
+          width: 100%;
+          padding: 0.625rem 0.3125rem 0 0.3125rem; } }
       .our-services-block .services-tile .tile-right h4 {
         font-size: 1.25rem;
         font-weight: 600; }
         @media only screen and (min-width: 40.063em) and (max-width: 64em) {
           .our-services-block .services-tile .tile-right h4 {
             margin-top: 1rem;
+            text-align: center; } }
+        @media only screen and (max-width: 40em) {
+          .our-services-block .services-tile .tile-right h4 {
+            margin-top: 0.625rem;
             text-align: center; } }
       .our-services-block .services-tile .tile-right p {
         font-size: 1.25rem;
@@ -3161,10 +3177,14 @@ html[data-useragent*='MSIE 10.0'] .panel {
     @media only screen and (min-width: 40.063em) and (max-width: 64em) {
       .our-work-block .our-work-tile {
         width: calc(50% - .5rem);
-        padding: 1.563rem 0.625rem 1rem 0.625rem; } }
+        padding: 1.563rem 0.25rem 0.9375rem 0.25rem;
+        display: inline; } }
     @media only screen and (max-width: 40em) {
       .our-work-block .our-work-tile {
-        width: 100%; } }
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 0.625rem; } }
     .our-work-block .our-work-tile h3 {
       float: left;
       width: 100%;
@@ -3206,6 +3226,9 @@ html[data-useragent*='MSIE 10.0'] .panel {
       margin-top: 1.25rem; }
       .our-work-block .our-work-tile .buttons .btn {
         margin-right: 0.625rem; }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+          .our-work-block .our-work-tile .buttons .btn {
+            padding: 0.625rem 0.9375rem; } }
         @media only screen and (max-width: 40em) {
           .our-work-block .our-work-tile .buttons .btn {
             margin-top: 1rem; } }
@@ -3224,7 +3247,7 @@ html[data-useragent*='MSIE 10.0'] .panel {
   border-top: 1px solid #cccccc; }
   @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     .quote-block {
-      padding: 2.5rem 1.875rem 1.875rem 100px; } }
+      padding: 2.5rem 1.875rem 1.875rem 50px; } }
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     .quote-block {
       padding: 2.5rem 1.875rem 1.875rem 3.125rem; } }
@@ -3244,11 +3267,13 @@ html[data-useragent*='MSIE 10.0'] .panel {
     @media only screen and (min-width: 64.063em) and (max-width: 90em) {
       .quote-block h3.quote {
         max-width: none;
+        padding-left: 1.563rem;
         padding-right: 0;
         font-size: 3rem; } }
     @media only screen and (min-width: 40.063em) and (max-width: 64em) {
       .quote-block h3.quote {
         max-width: none;
+        padding-left: 1.563rem;
         padding-right: 0;
         font-size: 3rem; } }
     @media only screen and (max-width: 40em) {
@@ -3274,15 +3299,17 @@ html[data-useragent*='MSIE 10.0'] .panel {
         max-width: 500px; } }
     @media only screen and (min-width: 64.063em) and (max-width: 90em) {
       .quote-block img {
-        position: static;
-        margin-top: 1.563rem; } }
+        top: 190px;
+        right: -150px; } }
     @media only screen and (min-width: 40.063em) and (max-width: 64em) {
       .quote-block img {
-        position: static;
-        margin-top: 1.563rem; } }
+        top: 210px;
+        right: -210px; } }
     @media only screen and (max-width: 40em) {
       .quote-block img {
         position: static;
+        right: 0;
+        max-width: 380px;
         margin-top: 1.563rem; } }
   .quote-block.reverse {
     padding: 1.875rem 1.875rem 1.875rem 1.875rem;
