@@ -1,58 +1,58 @@
 <!DOCTYPE>
-%html{"ng-app" => "xiriApp"}
+%html{ "ng-app" => "xiriApp" }
   %head
-    %meta{:charset => "UTF-8"}
+    %meta{ :charset => "UTF-8" }
       %title XIRI Media, LLC - www.xiri.io
-      %meta{:content => "XIRI Media, LLC - www.xiri.io", :name => "description"}
-      %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+      %meta{ :content => "XIRI Media, LLC - www.xiri.io", :name => "description" }
+      %meta{ :content => "IE=edge", "http-equiv" => "X-UA-Compatible" }
       / To ensure proper rendering and style for mobile devices
-      %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
+      %meta{ :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport" }
       / Begin ## FAVICONS ## Replace the icon images with your own under img/
-      %link{:href => "img/favicon.ico", :rel => "shortcut icon"}
-      -# %link{:href => "img/apple-touch-icon.png", :rel => "apple-touch-icon"}
-      -# %link{:href => "img/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}
-      -# %link{:href => "img/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
-      -# %link{:href => "img/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
-      -# %link{:href => "img/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}
+      %link{ :href => "img/favicon.ico", :rel => "shortcut icon" }
+      -# %link{ :href => "img/apple-touch-icon.png", :rel => "apple-touch-icon" }
+      -# %link{ :href => "img/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57" }
+      -# %link{ :href => "img/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72" }
+      -# %link{ :href => "img/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114" }
+      -# %link{ :href => "img/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144" }
 
       / Angular Spells
 
       / Application Spells
-      %link{:href => "bower_components/foundation-sites/dist/foundation.min.css", :rel => "stylesheet"}
-      %link{:href => "bower_components/components-font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}
-      %link{:href => "css/application.min.css", :rel => "stylesheet"}
+      %link{ :href => "bower_components/foundation-sites/dist/foundation.min.css", :rel => "stylesheet" }
+      %link{ :href => "bower_components/components-font-awesome/css/font-awesome.min.css", :rel => "stylesheet" }
+      %link{ :href => "css/application.min.css", :rel => "stylesheet" }
 
 
-  %body{"ng-controller" => "MainController", "ng-init" => "init()"}
-    %header.bg-color.primary{:role => "navigation"}
+  %body{ "ng-controller" => "MainController", "ng-init" => "init()" }
+    %header.bg-color.primary{ :role => "navigation" }
       .row.collapse
         .superhero-brand.medium-2.columns
-          %a#xiri_logo.xiri_logo{:href => "http://www.xiri.io"}
-            %img{:alt => "XIRI Logo", :src => "img/xiri_logo.svg"}
+          %a#xiri_logo.xiri_logo{ :href => "http://www.xiri.io" }
+            %img{ :alt => "XIRI Logo", :src => "img/xiri_logo.png" }
 
         #nav-modal
           .superhero-nav.medium-10.columns.hide-for-small-only
             %ul
               %li
-                %a{:href => "#"}
+                %a{ :href => "#" }
                   Home
               %li
-                %a{:href => "#"}
+                %a{ :href => "#" }
                   Work
               %li
-                %a{:href => "#"}
+                %a{ :href => "#" }
                   Process
               %li
-                %a{:href => "#"}
+                %a{ :href => "#" }
                   Clients
               %li
-                %a{:href => "#contact", "du-smooth-scroll" => "" }
+                %a{ :href => "#contact", "du-smooth-scroll" => "" }
                   Contact
               %li.hide-for-small-only
-                %a#tw_logo.tw_logo{:href => "http://www.thomaswicker.com", :target => "blank"}
-                  %img{:alt => "Link to thomaswicker.com", :src => "img/tw_logo.svg"}
+                %a#tw_logo.tw_logo{ :href => "http://www.thomaswicker.com", :target => "blank" }
+                  %img{ :alt => "Link to thomaswicker.com", :src => "img/tw_logo.png" }
               %li.show-for-small-only
-                %a{:href => "http://www.thomaswicker.com", :target => "blank"}
+                %a{ :href => "http://www.thomaswicker.com", :target => "blank" }
                   www.thomaswicker.com
 
         #nav-toggle
@@ -61,7 +61,7 @@
       .row.collapse
         %superhero.medium-12.columns.bg-color.primary
           .superhero-img
-            %img.guy-pointing{ :src => "img/home_page_guy_pointing.svg" }
+            %img.guy-pointing{ :src => "img/home_page_guy_pointing.png" }
 
           .superhero-content
             %h2
@@ -69,11 +69,11 @@
             %h4
               Thoughtfully crafted user interfaces can empower people and strengthen brands. Our UI solutions always focus on blending empathy, creativity, and rationality to solve real problems for both users and customers.
 
+    //Importing partials here into the template
     %ng-view
 
-
     / Magical Spells
-    %script{:src => "bower_components/jquery/dist/jquery.min.js"}
+    %script{ :src => "bower_components/jquery/dist/jquery.min.js" }
 
     :javascript
       $(document).ready(function() {
@@ -87,12 +87,13 @@
           });
       });
 
-    %script{:src => "bower_components/foundation-sites/dist/foundation.min.js"}
-    %script{:src => "bower_components/angular/angular.min.js"}
-    %script{:src => "bower_components/angular-route/angular-route.min.js"}
-    %script{:src => "bower_components/angular-scroll/angular-scroll.min.js"}
+    %script{ :src => "bower_components/foundation-sites/dist/foundation.min.js" }
+    %script{ :src => "bower_components/angular/angular.min.js" }
+    %script{ :src => "bower_components/angular-route/angular-route.min.js" }
+    %script{ :src => "bower_components/angular-scroll/angular-scroll.min.js" }
 
     //Live reload for development
-    %script{:src => "js/application.min.js"}
+    %script{ :src => "js/application.min.js" }
+
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

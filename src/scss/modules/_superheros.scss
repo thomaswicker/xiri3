@@ -70,11 +70,11 @@
 .superhero {
   position: relative;
   min-height: 300px;
-  padding: $unit 0 $unit-jumbo $unit-jumbo;
+  padding: $unit-xs 0 $unit-jumbo $unit-jumbo;
 
   @include mq(lg) {
     min-height: 270px;
-    padding: 2rem 2rem 1.5rem 2rem;
+    padding: $unit 2rem 1.5rem 2rem;
   }
 
   @include mq(md) {
