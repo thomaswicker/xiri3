@@ -27,27 +27,28 @@
     %header.bg-color.primary{ :role => "navigation" }
       .row.collapse
         .superhero-brand.medium-2.columns
-          %a#xiri_logo.xiri_logo{ :href => "http://www.xiri.io" }
+          %a#xiri_logo.xiri_logo{ "scroll-to-item" => "", "scroll-to" => "#home" }
             %img{ :alt => "XIRI Logo", :src => "img/xiri_logo.png" }
 
         #nav-modal
           .superhero-nav.medium-10.columns.hide-for-small-only
-            %ul
+            %ul.hide-for-all
               %li
-                %a{ :href => "#" }
+                %a{ "scroll-to-item" => "", "scroll-to" => "#home" }
                   Home
               %li
-                %a{ :href => "#" }
+                %a{ "scroll-to-item" => "", "scroll-to" => "#work" }
                   Work
               %li
-                %a{ :href => "#" }
+                %a{ "scroll-to-item" => "", "scroll-to" => "#process" }
                   Process
               %li
-                %a{ :href => "#" }
+                %a{ "scroll-to-item" => "", "scroll-to" => "#clients" }
                   Clients
               %li
-                %a{ :href => "#contact", "du-smooth-scroll" => "" }
+                %a{ "scroll-to-item" => "", "scroll-to" => "#contact" }
                   Contact
+
               %li.hide-for-small-only
                 %a#tw_logo.tw_logo{ :href => "http://www.thomaswicker.com", :target => "blank" }
                   %img{ :alt => "Link to thomaswicker.com", :src => "img/tw_logo.png" }
@@ -92,8 +93,4 @@
     %script{ :src => "bower_components/angular-route/angular-route.min.js" }
     %script{ :src => "bower_components/angular-scroll/angular-scroll.min.js" }
 
-    //Live reload for development
     %script{ :src => "js/application.min.js" }
-
-    :javascript
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

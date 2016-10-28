@@ -20,35 +20,35 @@
     <header class='bg-color primary' role='navigation'>
       <div class='row collapse'>
         <div class='superhero-brand medium-2 columns'>
-          <a class='xiri_logo' href='http://www.xiri.io' id='xiri_logo'>
+          <a class='xiri_logo' id='xiri_logo' scroll-to-item='' scroll-to='#home'>
             <img alt='XIRI Logo' src='img/xiri_logo.png'>
           </a>
         </div>
         <div id='nav-modal'>
           <div class='superhero-nav medium-10 columns hide-for-small-only'>
-            <ul>
+            <ul class='hide-for-all'>
               <li>
-                <a href='#'>
+                <a scroll-to-item='' scroll-to='#home'>
                   Home
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a scroll-to-item='' scroll-to='#work'>
                   Work
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a scroll-to-item='' scroll-to='#process'>
                   Process
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a scroll-to-item='' scroll-to='#clients'>
                   Clients
                 </a>
               </li>
               <li>
-                <a du-smooth-scroll='' href='#contact'>
+                <a scroll-to-item='' scroll-to='#contact'>
                   Contact
                 </a>
               </li>
@@ -105,10 +105,6 @@
     <script src='bower_components/angular/angular.min.js'></script>
     <script src='bower_components/angular-route/angular-route.min.js'></script>
     <script src='bower_components/angular-scroll/angular-scroll.min.js'></script>
-    <!-- /Live reload for development -->
     <script src='js/application.min.js'></script>
-    <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
   </body>
 </html>
